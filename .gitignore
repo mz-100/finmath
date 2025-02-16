@@ -1,0 +1,16 @@
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.bcf
+*.blg
+*.pdf
+*.ptc
+*.run.xml
+*.toc
+.vscode/
+_minted*/
+code/
+data/
+pic-old/
+draft/

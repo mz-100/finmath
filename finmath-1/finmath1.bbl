@@ -1,0 +1,782 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Bachelier00}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=cf3b72acd9c2b0193404b5f6490d3e77}{%
+           family={Bachelier},
+           familyi={B\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{fullhash}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{fullhashraw}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{bibnamehash}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{authorbibnamehash}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{authornamehash}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{authorfullhash}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \strng{authorfullhashraw}{cf3b72acd9c2b0193404b5f6490d3e77}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{17}
+      \field{journaltitle}{Annales Scientifiques de l’École Normale Supérieure}
+      \field{langid}{french}
+      \field{title}{Théorie de la Spéculation}
+      \field{year}{1900}
+      \field{pages}{21\bibrangedash 88}
+      \range{pages}{68}
+      \field{volume}{17}
+      \range{volume}{1}
+    \endentry
+    \entry{Black76}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=93277dfc1ebe8d44428e74799781e4d7}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Fischer},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{fullhash}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{fullhashraw}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{bibnamehash}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{authorbibnamehash}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{authornamehash}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{authorfullhash}{93277dfc1ebe8d44428e74799781e4d7}
+      \strng{authorfullhashraw}{93277dfc1ebe8d44428e74799781e4d7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{3}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{langid}{english}
+      \field{title}{The pricing of commodity contracts}
+      \field{year}{1976}
+      \field{number}{1\bibrangedash 2}
+      \range{number}{2}
+      \field{pages}{167\bibrangedash 179}
+      \range{pages}{13}
+      \field{volume}{3}
+      \range{volume}{1}
+    \endentry
+    \entry{BlackScholes73}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=93277dfc1ebe8d44428e74799781e4d7}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Fischer},
+           giveni={F\bibinitperiod}}}%
+        {{hash=301bb16d9f303a488dac1c73931c0eff}{%
+           family={Scholes},
+           familyi={S\bibinitperiod},
+           given={Myron},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{fullhash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{fullhashraw}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{bibnamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authorbibnamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authornamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authorfullhash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authorfullhashraw}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{81}
+      \field{journaltitle}{Journal of political economy}
+      \field{langid}{english}
+      \field{title}{The pricing of options and corporate liabilities}
+      \field{year}{1973}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{637\bibrangedash 654}
+      \range{pages}{18}
+      \field{volume}{81}
+      \range{volume}{1}
+      \keyw{fm1-main}
+    \endentry
+    \entry{DalangMorton+90}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=028a13f285c4388398391bde8e85c58d}{%
+           family={Dalang},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=2eb762c2a3542e3eedf988ce18bf56c3}{%
+           family={Morton},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e02810bafb2578cf76be865644e35b88}{%
+           family={Willinger},
+           familyi={W\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{fullhash}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{fullhashraw}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{bibnamehash}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{authorbibnamehash}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{authornamehash}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{authorfullhash}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \strng{authorfullhashraw}{83d53e1ac2b5cea8a63e9ce1da16aa66}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{29}
+      \field{journaltitle}{Stochastics}
+      \field{langid}{english}
+      \field{title}{Equivalent martingale measures and no-arbitrage in stochastic securities market models}
+      \field{year}{1990}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{185\bibrangedash 201}
+      \range{pages}{17}
+      \field{volume}{29}
+      \range{volume}{1}
+    \endentry
+    \entry{EberleinKallsen19}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=2195b017892016cdc62ea507b8a87f91}{%
+           family={Eberlein},
+           familyi={E\bibinitperiod},
+           given={Ernst},
+           giveni={E\bibinitperiod}}}%
+        {{hash=36c4cd5f43b35f1971f5eb0ecfef32e7}{%
+           family={Kallsen},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{fullhash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{fullhashraw}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{bibnamehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authorbibnamehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authornamehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authorfullhash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authorfullhashraw}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Mathematical Finance}
+      \field{year}{2019}
+    \endentry
+    \entry{FollmerSchied11}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0c7afbc5410054170dbed41d05baca56}{%
+           family={Föllmer},
+           familyi={F\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1f6c583833ee16c8fddcf5319a341e74}{%
+           family={Schied},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{81ddf1f85ae72234c089ade593394068}
+      \strng{fullhash}{81ddf1f85ae72234c089ade593394068}
+      \strng{fullhashraw}{81ddf1f85ae72234c089ade593394068}
+      \strng{bibnamehash}{81ddf1f85ae72234c089ade593394068}
+      \strng{authorbibnamehash}{81ddf1f85ae72234c089ade593394068}
+      \strng{authornamehash}{81ddf1f85ae72234c089ade593394068}
+      \strng{authorfullhash}{81ddf1f85ae72234c089ade593394068}
+      \strng{authorfullhashraw}{81ddf1f85ae72234c089ade593394068}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{\begin{otherlanguage}{russian}Перевод 2-го изд.: \fullcite{FollmerSchied08}\end{otherlanguage}}
+      \field{edition}{3rd ed.}
+      \field{langid}{english}
+      \field{title}{Stochastic Finance: An Introduction in Discrete Time}
+      \field{year}{2011}
+      \keyw{fm1-main}
+    \endentry
+    \entry{Glasserman03}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=ad8512135fae00796ff8f92716d977c9}{%
+           family={Glasserman},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ad8512135fae00796ff8f92716d977c9}
+      \strng{fullhash}{ad8512135fae00796ff8f92716d977c9}
+      \strng{fullhashraw}{ad8512135fae00796ff8f92716d977c9}
+      \strng{bibnamehash}{ad8512135fae00796ff8f92716d977c9}
+      \strng{authorbibnamehash}{ad8512135fae00796ff8f92716d977c9}
+      \strng{authornamehash}{ad8512135fae00796ff8f92716d977c9}
+      \strng{authorfullhash}{ad8512135fae00796ff8f92716d977c9}
+      \strng{authorfullhashraw}{ad8512135fae00796ff8f92716d977c9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Monte Carlo Methods in Financial Engineering}
+      \field{year}{2003}
+    \endentry
+    \entry{Jaeckel06}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=99aad06857552d3caf3070dce49785f0}{%
+           family={Jäckel},
+           familyi={J\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{fullhash}{99aad06857552d3caf3070dce49785f0}
+      \strng{fullhashraw}{99aad06857552d3caf3070dce49785f0}
+      \strng{bibnamehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authorbibnamehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authornamehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authorfullhash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authorfullhashraw}{99aad06857552d3caf3070dce49785f0}
+      \field{extraname}{1}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{26}
+      \field{journaltitle}{Wilmott}
+      \field{langid}{english}
+      \field{title}{By implication}
+      \field{year}{2006}
+      \field{pages}{60\bibrangedash 66}
+      \range{pages}{7}
+      \field{volume}{26}
+      \range{volume}{1}
+    \endentry
+    \entry{Jaeckel15}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=99aad06857552d3caf3070dce49785f0}{%
+           family={Jäckel},
+           familyi={J\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{fullhash}{99aad06857552d3caf3070dce49785f0}
+      \strng{fullhashraw}{99aad06857552d3caf3070dce49785f0}
+      \strng{bibnamehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authorbibnamehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authornamehash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authorfullhash}{99aad06857552d3caf3070dce49785f0}
+      \strng{authorfullhashraw}{99aad06857552d3caf3070dce49785f0}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{2015}
+      \field{journaltitle}{Wilmott}
+      \field{langid}{english}
+      \field{title}{Let's be rational}
+      \field{year}{2015}
+      \field{number}{75}
+      \range{number}{1}
+      \field{pages}{40\bibrangedash 53}
+      \range{pages}{14}
+      \field{volume}{2015}
+      \range{volume}{1}
+    \endentry
+    \entry{KabanovStricker01}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b226a05e8dfd55295b684d919dee625a}{%
+           family={Kabanov},
+           familyi={K\bibinitperiod},
+           given={Yuri},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d67780d645a90f41d5b776a1e42a4a04}{%
+           family={Stricker},
+           familyi={S\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{fullhash}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{fullhashraw}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{bibnamehash}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{authorbibnamehash}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{authornamehash}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{authorfullhash}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \strng{authorfullhashraw}{a6bcb78718ff22a96cdd5e5ab02171b1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{35}
+      \field{journaltitle}{Séminaire de probabilités de Strasbourg}
+      \field{langid}{english}
+      \field{title}{A teacher's note on no-arbitrage criteria}
+      \field{year}{2001}
+      \field{pages}{149\bibrangedash 152}
+      \range{pages}{4}
+      \field{volume}{35}
+      \range{volume}{1}
+    \endentry
+    \entry{Kallenberg97}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f6bb1091b9da51c1ac66f8a4a75fcba9}{%
+           family={Kallenberg},
+           familyi={K\bibinitperiod},
+           given={Olav},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{fullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{fullhashraw}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{bibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorbibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authornamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorfullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorfullhashraw}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Foundations of Modern Probability}
+      \field{year}{1997}
+    \endentry
+    \entry{KaratzasShreve91}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=f2b9c76604ea66b2ab28d18a454d3fbf}{%
+           family={Karatzas},
+           familyi={K\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9e110e7c548ab825117ed32cb12bdfd3}{%
+           family={Shreve},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima E},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{fullhash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{fullhashraw}{53d5a81a823486de515935e3bf6435a6}
+      \strng{bibnamehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authorbibnamehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authornamehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authorfullhash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authorfullhashraw}{53d5a81a823486de515935e3bf6435a6}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd ed.}
+      \field{langid}{english}
+      \field{title}{Brownian Motion and Stochastic Calculus}
+      \field{year}{1991}
+    \endentry
+    \entry{Kolmogorov31}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=34c3ec5252231aba412d57ca504c4e7e}{%
+           family={Kolmogoroff},
+           familyi={K\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{fullhash}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{fullhashraw}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{bibnamehash}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{authorbibnamehash}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{authornamehash}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{authorfullhash}{34c3ec5252231aba412d57ca504c4e7e}
+      \strng{authorfullhashraw}{34c3ec5252231aba412d57ca504c4e7e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{\begin{otherlanguage}{russian}Перевод: \fullcite[546]{Kolmogorov38}\end{otherlanguage}}
+      \field{internalsortvolume}{104}
+      \field{journaltitle}{Mathematische Annalen}
+      \field{langid}{german}
+      \field{title}{Über die analytischen Methoden in der Wahrscheinlichkeitsrechnung}
+      \field{year}{1931}
+      \field{pages}{415\bibrangedash 458}
+      \range{pages}{44}
+      \field{volume}{104}
+      \range{volume}{1}
+    \endentry
+    \entry{Merton73}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e2894bce14479f5a711418ce8f8ffa}{%
+           family={Merton},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{fullhash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{fullhashraw}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{bibnamehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authorbibnamehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authornamehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authorfullhash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authorfullhashraw}{b1e2894bce14479f5a711418ce8f8ffa}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell Journal of Economics and Management Science}
+      \field{langid}{english}
+      \field{title}{Theory of rational option pricing}
+      \field{year}{1973}
+      \field{pages}{141\bibrangedash 183}
+      \range{pages}{43}
+      \keyw{fm1-main}
+    \endentry
+    \entry{VanDerVaart98}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c0326d048e485bd0809a91501f2362a0}{%
+           family={Vaart},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{c0326d048e485bd0809a91501f2362a0}
+      \strng{fullhash}{c0326d048e485bd0809a91501f2362a0}
+      \strng{fullhashraw}{c0326d048e485bd0809a91501f2362a0}
+      \strng{bibnamehash}{c0326d048e485bd0809a91501f2362a0}
+      \strng{authorbibnamehash}{c0326d048e485bd0809a91501f2362a0}
+      \strng{authornamehash}{c0326d048e485bd0809a91501f2362a0}
+      \strng{authorfullhash}{c0326d048e485bd0809a91501f2362a0}
+      \strng{authorfullhashraw}{c0326d048e485bd0809a91501f2362a0}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Asymptotic statistics}
+      \field{year}{1998}
+    \endentry
+    \entry{Bogachev03}{mvbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=fda36fc396180bc584cc856327d7c9af}{%
+           family={Богачёв},
+           familyi={Б\bibinitperiod},
+           given={Владимир\bibnamedelima Игоревич},
+           giveni={В\bibinitperiod\bibinitdelim И\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Регулярная и хаотическая динамика}%
+      }
+      \strng{namehash}{fda36fc396180bc584cc856327d7c9af}
+      \strng{fullhash}{fda36fc396180bc584cc856327d7c9af}
+      \strng{fullhashraw}{fda36fc396180bc584cc856327d7c9af}
+      \strng{bibnamehash}{fda36fc396180bc584cc856327d7c9af}
+      \strng{authorbibnamehash}{fda36fc396180bc584cc856327d7c9af}
+      \strng{authornamehash}{fda36fc396180bc584cc856327d7c9af}
+      \strng{authorfullhash}{fda36fc396180bc584cc856327d7c9af}
+      \strng{authorfullhashraw}{fda36fc396180bc584cc856327d7c9af}
+      \field{sortinit}{Б}
+      \field{sortinithash}{5261f8dfa92113358b76bb09b8629977}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Основы теории меры}
+      \field{year}{2003}
+    \endentry
+    \entry{BulinskiShiryaev04}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=cee92c3f3d3f6b09fff57fc4cceb5651}{%
+           family={Булинский},
+           familyi={Б\bibinitperiod},
+           given={Александр\bibnamedelima Вадимович},
+           giveni={А\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=f9348d5dad43305a394be356b7977ee9}{%
+           family={Ширяев},
+           familyi={Ш\bibinitperiod},
+           given={Альберт\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Физматлит}%
+      }
+      \strng{namehash}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{fullhash}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{fullhashraw}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{bibnamehash}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{authorbibnamehash}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{authornamehash}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{authorfullhash}{16fd25e08b9ee712c63d342dc24ef86f}
+      \strng{authorfullhashraw}{16fd25e08b9ee712c63d342dc24ef86f}
+      \field{sortinit}{Б}
+      \field{sortinithash}{5261f8dfa92113358b76bb09b8629977}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Теория случайных процессов}
+      \field{year}{2004}
+      \keyw{fm1-main}
+    \endentry
+    \entry{KolmogorovFomin76}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=f8bef0464b53c917d11221af7c996321}{%
+           family={Колмогоров},
+           familyi={К\bibinitperiod},
+           given={А\bibnamedelima Н},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+        {{hash=1d3b4d730122727c2effdbbb213af438}{%
+           family={Фомин},
+           familyi={Ф\bibinitperiod},
+           given={С\bibnamedelima В},
+           giveni={С\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{df8272700f370aa0f5243febb289958a}
+      \strng{fullhash}{df8272700f370aa0f5243febb289958a}
+      \strng{fullhashraw}{df8272700f370aa0f5243febb289958a}
+      \strng{bibnamehash}{df8272700f370aa0f5243febb289958a}
+      \strng{authorbibnamehash}{df8272700f370aa0f5243febb289958a}
+      \strng{authornamehash}{df8272700f370aa0f5243febb289958a}
+      \strng{authorfullhash}{df8272700f370aa0f5243febb289958a}
+      \strng{authorfullhashraw}{df8272700f370aa0f5243febb289958a}
+      \field{sortinit}{К}
+      \field{sortinithash}{007824ff2af181c6f6762379475efd5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4-е изд.}
+      \field{langid}{russian}
+      \field{title}{Элементы теории функций и функционального анализа}
+      \field{year}{1976}
+    \endentry
+    \entry{Kolmogorov38}{article}{skipbib=true}{}
+      \name{author}{1}{}{%
+        {{hash=682130430baf536727753da0df75e06c}{%
+           family={Колмогоров},
+           familyi={К\bibinitperiod},
+           given={Андрей\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \strng{namehash}{682130430baf536727753da0df75e06c}
+      \strng{fullhash}{682130430baf536727753da0df75e06c}
+      \strng{fullhashraw}{682130430baf536727753da0df75e06c}
+      \strng{bibnamehash}{682130430baf536727753da0df75e06c}
+      \strng{authorbibnamehash}{682130430baf536727753da0df75e06c}
+      \strng{authornamehash}{682130430baf536727753da0df75e06c}
+      \strng{authorfullhash}{682130430baf536727753da0df75e06c}
+      \strng{authorfullhashraw}{682130430baf536727753da0df75e06c}
+      \field{sortinit}{К}
+      \field{sortinithash}{007824ff2af181c6f6762379475efd5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Успехи математических наук}
+      \field{langid}{russian}
+      \field{title}{Об аналитических методах в теории вероятностей}
+      \field{year}{1938}
+      \field{number}{5}
+      \range{number}{1}
+      \field{pages}{5\bibrangedash 41}
+      \range{pages}{37}
+    \endentry
+    \entry{Krylov80}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8ecec4dd2c67ebef8578bb1c91fe0d2e}{%
+           family={Крылов},
+           familyi={К\bibinitperiod},
+           given={Н\bibnamedelima В},
+           giveni={Н\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{fullhash}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{fullhashraw}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{bibnamehash}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{authorbibnamehash}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{authornamehash}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{authorfullhash}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \strng{authorfullhashraw}{8ecec4dd2c67ebef8578bb1c91fe0d2e}
+      \field{sortinit}{К}
+      \field{sortinithash}{007824ff2af181c6f6762379475efd5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Управляемые процессы диффузионного типа}
+      \field{year}{1980}
+    \endentry
+    \entry{LiptserShiryaev74}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=51363bae999a885cc46455738b312e4d}{%
+           family={Липцер},
+           familyi={Л\bibinitperiod},
+           given={Роберт\bibnamedelima Шевилевич},
+           giveni={Р\bibinitperiod\bibinitdelim Ш\bibinitperiod}}}%
+        {{hash=f9348d5dad43305a394be356b7977ee9}{%
+           family={Ширяев},
+           familyi={Ш\bibinitperiod},
+           given={Альберт\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{988b0227e6093893f550a9f08f5742cf}
+      \strng{fullhash}{988b0227e6093893f550a9f08f5742cf}
+      \strng{fullhashraw}{988b0227e6093893f550a9f08f5742cf}
+      \strng{bibnamehash}{988b0227e6093893f550a9f08f5742cf}
+      \strng{authorbibnamehash}{988b0227e6093893f550a9f08f5742cf}
+      \strng{authornamehash}{988b0227e6093893f550a9f08f5742cf}
+      \strng{authorfullhash}{988b0227e6093893f550a9f08f5742cf}
+      \strng{authorfullhashraw}{988b0227e6093893f550a9f08f5742cf}
+      \field{sortinit}{Л}
+      \field{sortinithash}{408c91708504c4d55e9c1a703c852f82}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Статистика случайных процессов}
+      \field{year}{1974}
+    \endentry
+    \entry{FollmerSchied08}{book}{skipbib=true}{}
+      \name{author}{2}{}{%
+        {{hash=16b1a9b73ee30eda7ce4433348f558e0}{%
+           family={Фёльмер},
+           familyi={Ф\bibinitperiod},
+           given={Ганс},
+           giveni={Г\bibinitperiod}}}%
+        {{hash=0026e1b1f3891fbc6c757ed939d9b18a}{%
+           family={Шид},
+           familyi={Ш\bibinitperiod},
+           given={Александр},
+           giveni={А\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {МЦНМО}%
+      }
+      \strng{namehash}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{fullhash}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{fullhashraw}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{bibnamehash}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{authorbibnamehash}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{authornamehash}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{authorfullhash}{6e09bba7d938b401404abc20d5a66c63}
+      \strng{authorfullhashraw}{6e09bba7d938b401404abc20d5a66c63}
+      \field{sortinit}{Ф}
+      \field{sortinithash}{b428a16bb8d154b256b1e6c39440f4f9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Введение в стохастические финансы. Дискретное время}
+      \field{year}{2008}
+    \endentry
+    \entry{Shiryaev04}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9348d5dad43305a394be356b7977ee9}{%
+           family={Ширяев},
+           familyi={Ш\bibinitperiod},
+           given={Альберт\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {МЦНМО}%
+      }
+      \strng{namehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{fullhash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{fullhashraw}{f9348d5dad43305a394be356b7977ee9}
+      \strng{bibnamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorbibnamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authornamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorfullhash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorfullhashraw}{f9348d5dad43305a394be356b7977ee9}
+      \field{extraname}{1}
+      \field{sortinit}{Ш}
+      \field{sortinithash}{11967b4eaab40d50443e8eae07dc465c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Вероятность}
+      \field{year}{2004}
+      \keyw{fm1-main}
+    \endentry
+    \entry{Shiryaev98}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9348d5dad43305a394be356b7977ee9}{%
+           family={Ширяев},
+           familyi={Ш\bibinitperiod},
+           given={Альберт\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {МЦНМО}%
+      }
+      \strng{namehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{fullhash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{fullhashraw}{f9348d5dad43305a394be356b7977ee9}
+      \strng{bibnamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorbibnamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authornamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorfullhash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorfullhashraw}{f9348d5dad43305a394be356b7977ee9}
+      \field{extraname}{2}
+      \field{sortinit}{Ш}
+      \field{sortinithash}{11967b4eaab40d50443e8eae07dc465c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Основы стохастической финансовой математики}
+      \field{year}{2016}
+      \keyw{fm1-main}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
