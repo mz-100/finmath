@@ -10,7 +10,8 @@
 *.toc
 .vscode/
 _minted*/
-code/
+__pycache__/
 data/
 pic-old/
 draft/
+0*.ipynb
