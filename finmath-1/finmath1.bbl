@@ -39,7 +39,6 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{17}
       \field{journaltitle}{Annales Scientifiques de l’École Normale Supérieure}
       \field{langid}{french}
       \field{title}{Théorie de la Spéculation}
@@ -69,7 +68,6 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{3}
       \field{journaltitle}{Journal of Financial Economics}
       \field{langid}{english}
       \field{title}{The pricing of commodity contracts}
@@ -106,7 +104,6 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{81}
       \field{journaltitle}{Journal of political economy}
       \field{langid}{english}
       \field{title}{The pricing of options and corporate liabilities}
@@ -149,7 +146,6 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{29}
       \field{journaltitle}{Stochastics}
       \field{langid}{english}
       \field{title}{Equivalent martingale measures and no-arbitrage in stochastic securities market models}
@@ -276,7 +272,6 @@
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{26}
       \field{journaltitle}{Wilmott}
       \field{langid}{english}
       \field{title}{By implication}
@@ -307,7 +302,6 @@
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{2015}
       \field{journaltitle}{Wilmott}
       \field{langid}{english}
       \field{title}{Let's be rational}
@@ -344,7 +338,6 @@
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{35}
       \field{journaltitle}{Séminaire de probabilités de Strasbourg}
       \field{langid}{english}
       \field{title}{A teacher's note on no-arbitrage criteria}
@@ -438,7 +431,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{addendum}{\begin{otherlanguage}{russian}Перевод: \fullcite[546]{Kolmogorov38}\end{otherlanguage}}
-      \field{internalsortvolume}{104}
       \field{journaltitle}{Mathematische Annalen}
       \field{langid}{german}
       \field{title}{Über die analytischen Methoden in der Wahrscheinlichkeitsrechnung}

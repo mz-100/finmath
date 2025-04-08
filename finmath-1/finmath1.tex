@@ -1,5 +1,5 @@
 \documentclass[a4paper,12pt,oneside]{extbook}
-%\includeonly{about,onestep,futures,crr-limit,bs2,bachelier,black,numpy}
+%\includeonly{about,onestep,crr,crr-limit,practice,numpy,pr-crr,american}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
@@ -99,6 +99,7 @@
 
 \theoremstyle{definition}
 \newtheorem{remark}{Замечание}
+\newtheorem*{remark*}{Замечание}
 \newtheorem{definition}{Определение}
 \newtheorem{example}{Пример}
 
@@ -130,7 +131,7 @@ sharp corners, top=0mm, bottom=0mm,left=0mm,right=0mm,
 title code={\path[draw=mintedframe,dashed, fill=mintedbackground](title.south west)--(title.south east);},
 frame code={\path[draw=mintedframe, fill=mintedbackground](frame.south west) rectangle (frame.north east);}
 }
-%\newtcblisting{myminted}[2][]{listing engine=minted, listing only,#1, title=#2, minted language=python, colback=mintedbackground}
+\newminted[python]{python}{}
 
 % Сокращения
 \newcommand{\cadlag}{c\`adl\`ag}
@@ -237,7 +238,9 @@ frame code={\path[draw=mintedframe, fill=mintedbackground](frame.south west) rec
 \include{black}
 %\include{futures}
 
-%\include{numpy}
+\include{practice}
+\include{numpy}
+\include{pr-crr}
 %\printindex
 
 \clearpage
