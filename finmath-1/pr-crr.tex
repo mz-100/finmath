@@ -18,7 +18,6 @@ from dataclasses import dataclass, field
 
 @dataclass
 class CoxRossRubinstein:
-    s0: float
     u: float
     d: float
     r: float = 0.0
@@ -30,15 +29,14 @@ class CoxRossRubinstein:
 \end{python}
 
 Декоратор \verb"@dataclass" "--- это удобная конструкция, которая автоматически добавляет в создаваемый класс конструктор, инициализирующий переменные, перечисленные в классе (для этого нужно указать все переменные и их типы).
-Объект класса создается операцией \verb"model = CoxRossRubinstein(s0, u, d, r)".  
+Объект класса создается операцией \verb"model = CoxRossRubinstein(u, d, r)".  
 
 Использование датакласса удобно, например, тем, что не нужно писать стандартный код конструктора следующего вида.
 \begin{python}
 # В датаклассе такой конструктор будет создан автоматически
 class CoxRossRubinstein:
     # ...
-    def __init__(self, s0, u, d, r = 0.0):
-      self.s0 = s0
+    def __init__(self, u, d, r = 0.0):
       self.u = u
       self.d = d
       self.r = r
@@ -48,7 +46,7 @@ class CoxRossRubinstein:
 В нашем классе таковой является риск-нейтральная вероятность \verb"q".
 Чтобы она не была включена в конструктор, мы добавили \verb"field(init=False)" в ее определение.
 
-В \verb"__post_init__" можно добавить также, например, проверку корректности параметров модели (но в пакете \verb"finmath1" такая проверка для простоты не осуществляется).
+В \verb"__post_init__" можно добавить, например, проверку корректности параметров модели (но в пакете \verb"finmath1" такая проверка для простоты не осуществляется).
 \begin{python}
 class CoxRossRubinstein:
     # ...
@@ -62,11 +60,11 @@ class CoxRossRubinstein:
 
 Датаклассы предоставляют и другие удобные методы, имплементируемые автоматически: например, метод строкового представления \verb"__str__", производящий удобно читаемый вывод при использовании \verb"print(model)". 
 \begin{python}
-model = CoxRossRubinstein(100, 0.1, -0.1, 0.05)
-print(model)  # CoxRossRubinstein(s0=100, u=0.1, d=-0.1, r=0.05, q=0.75)
+model = CoxRossRubinstein(0.1, -0.1, 0.05)
+print(model)  # CoxRossRubinstein(u=0.1, d=-0.1, r=0.05, q=0.75)
 \end{python}
 
-\begin{remark}[как расширить функционал модели]
+\begin{remark}[как расширить модель]
 Модель \crr, реализованная в пакете \verb"finmath1", содержит лишь базовый функционал.
 Если потребуется ее расширить для использования в каких-то других приложениях, то можно либо создать класс, производный от \verb"CoxRossRubinstein" и содержащий новые функции, либо добавить глобальные функции, принимающие объект класса \verb"CoxRossRubinstein" в качестве аргумента.
 То же самое относится и к другим моделям пакета. 
@@ -81,11 +79,11 @@ def new_function(model, arg1, arg2, ...):
     # ...
 
 # Использование функции из производного класса
-model = CoxRossRubinsteinExtended(s0=100, u=0.1, d=0.1, r=0.05)
+model = CoxRossRubinsteinExtended(u=0.1, d=0.1, r=0.05)
 result = model.new_function(arg1, arg2, ...)
 
 # Использование глобальной функции
-model = CoxRossRubinstein(s0=100, u=0.1, d=0.1, r=0.05)
+model = CoxRossRubinstein(u=0.1, d=0.1, r=0.05)
 result = new_function(model, arg1, arg2, ...)
 \end{python}
 \end{remark}
@@ -100,15 +98,15 @@ result = new_function(model, arg1, arg2, ...)
 V_0^X = \frac{1}{(1+r)^T}\E^\Q X = \frac{1}{(1+r)^T} \sum_{n=0}^T f\bigl(S_0(1+u)^n(1+d)^{T-n}\bigr) C_T^n q^n (1-q)^{T-n}.
 \]
 
-Реализуемая ниже функция цены имеет два аргумента\footnote{Помимо аргумента \verb"self".}: скалярный аргумент \verb"maturity" задает время исполнения, а аргумент \verb"payoff" должен быть универсальной функцией, которая, будучи примененной к массиву значений цены рискового актива в момент $T=$\;\verb"maturity", возвращает массив значений $f(S_T)$. 
+Реализуемая ниже функция цены имеет три аргумента\footnote{Помимо аргумента \verb"self".}: скалярные аргументы \verb"spot" и \verb"maturity" задают начальную цену базового актива и время исполнения платежного обязательства, а аргумент \verb"payoff" должен быть универсальной функцией, которая, будучи примененной к массиву значений цены рискового актива в момент $T=$\;\verb"maturity", возвращает массив значений $f(S_T)$. 
 \begin{python}
 ### crr.py ###
 class CoxRossRubinstein:
     # ...
-    def path_indep_price(self, maturity, payoff):
+    def path_indep_price(self, spot, maturity, payoff):
         N = np.arange(maturity+1)
         Q = comb(maturity, N) * self.q**N * (1-self.q)**N[::-1]
-        S = self.s0 * (1+self.u)**N * (1+self.d)**N[::-1]
+        S = spot * (1+self.u)**N * (1+self.d)**N[::-1]
         return np.dot(Q, payoff(S)) / (1+self.r)**maturity
 \end{python}
 
@@ -129,15 +127,15 @@ class CoxRossRubinstein:
 ### crr.py ###
 class CoxRossRubinstein:
     # ...
-    def call_price(self, maturity, strike):
+    def call_price(self, spot, maturity, strike):
         payoff = lambda s: np.maximum(np.subtract.outer(s, strike), 0)
-        return self.path_indep_price(maturity, payoff)
+        return self.path_indep_price(spot, maturity, payoff)
     
-    def put_price(self, maturity, strike):
+    def put_price(self, spot, maturity, strike):
         payoff = lambda s: np.maximum(-np.subtract.outer(s, strike), 0)
-        return self.path_indep_price(maturity, payoff)
+        return self.path_indep_price(spot, maturity, payoff)
 \end{python}
-Здесь считается, что аргумент \verb"maturity" является скаляром, а \verb"strike" может быть как скаляром, так и одномерным массивом\footnote{Функция будет работать и для многомерного массива \verb"strike", но трудно представить, где это может потребоваться.}.
+Здесь считается, что аргументы \verb"spot" и \verb"maturity" являются скалярами, а \verb"strike" может быть как скаляром, так и одномерным массивом\footnote{Функция будет работать и для многомерного массива \verb"strike", но трудно представить, где это может потребоваться.}.
 Использование массива страйков позволяет вычислить цены сразу всех нужных опционов для заданного времени исполнения.
 Это удобно и, главное, быстрее, чем вычислять цены по отдельности в дополнительном цикле.
 
@@ -150,10 +148,10 @@ class CoxRossRubinstein:
 В качестве примера, вычислим цену опциона колл из примера \ref{crr:example} в лекции \ref{ch:crr}, а также массив цен трех опционов в той же модели.
 \begin{python}
 ### crr.ipynb ###
-model = CoxRossRubinstein(s0=100, u=0.1, d=-0.1, r=0.05)
-print(model.call_price(2, 100))             # 10.71
-print(model.call_price(2, [90, 100, 110]))  # [18.88, 10.71, 5.61]
-print(model.put_price(2, [90, 100, 110]))   # [0.51, 1.42, 5.39]
+model = CoxRossRubinstein(u=0.1, d=-0.1, r=0.05)
+print(model.call_price(100, 2, 100))             # 10.71
+print(model.call_price(100, 2, [90, 100, 110]))  # [18.88, 10.71, 5.61]
+print(model.put_price(100, 2, [90, 100, 110]))   # [0.51, 1.42, 5.39]
 \end{python}
 
 
@@ -170,12 +168,12 @@ V_0^X = \frac1{(1+r)^T} \E^{\Q} X = \frac1{(1+r)^T} \sum_{\omega\in\Omega} f(S_0
 ### crr.py ###
 class CoxRossRubinstein:
     # ...
-    def path_dep_price(self, maturity, payoff):
+    def path_dep_price(self, spot, maturity, payoff):
         Omega = np.unpackbits(np.arange(2**maturity, dtype='<u8').view('u1').\
             reshape((-1, 8)), axis=1, count=maturity, bitorder='little').T
-        Q  = (self.q/(1-self.q))**np.sum(Omega, axis=0) * (1-self.q)**maturity
+        Q = (self.q/(1-self.q))**np.sum(Omega, axis=0) * (1-self.q)**maturity
         xi = np.where(Omega, 1+self.u, 1+self.d)
-        S = self.s0*np.vstack((np.ones(2**maturity), np.cumprod(xi, axis=0)))
+        S = spot * np.vstack((np.ones(2**maturity), np.cumprod(xi, axis=0)))
         X = payoff(S)
         return np.dot(Q, X) / (1+self.r)**maturity
 \end{python}
@@ -198,12 +196,12 @@ class CoxRossRubinstein:
 
 Далее для вычисления массива вероятностей $Q$ используется формула
 \[
-\Q(\omega) = \left(\frac{1+u}{1+d}\right)^{\sum_{n=1}^T a_n} (1+d)^T,
+\Q(\omega) = \left(\frac q{1-q}\right)^{\sum_{n=1}^T a_n} (1-q)^T,
 \]
 где каждый исход $\omega=(a_1,\dots,a_T)$ соответствует одному столбцу массива \verb"Omega", и поэтому при вычислении суммы мы указываем аргумент \verb"axis=0", суммирующий по строкам.
 
 Массив \verb"xi" получается из \verb"Omega" заменой 0 на $1+d$, а 1 на $1+u$, для чего используется функция \verb"np.where".
-В общем случае \verb"np.where(x, a, b)" принимает массив логических значений \verb"x" и возвращает массив такой же формы, где на месте каждого истинного значения записано \verb"a", а на месте ложного "--- \verb"b" (при этом \verb"a" и \verb"b" могут быть массивами, тогда из них будут выбираться элементы с соответствующими индексами; подробнее см.~документацию\footnote{\url{https://numpy.org/doc/2.2/reference/generated/numpy.where.html}}).
+В общем случае \verb"np.where(x, a, b)" принимает массив логических значений \verb"x" и возвращает массив такой же формы, где на месте каждого истинного значения записано \verb"a", а на месте ложного "--- \verb"b" (при этом \verb"a" и \verb"b" могут быть массивами, тогда из них будут выбираться элементы с соответствующими индексами; подробнее см.~документацию\footnote{\url{https://numpy.org/doc/stable/reference/generated/numpy.where.html}}).
 В нашем случае нулевые элементы \verb"Omega" трактуются как ложные, а единичные как истинные. 
 
 Двумерный массив \verb"S" в каждом своем столбце содержит траекторию цены рискового актива (и, следовательно, имеет форму $(T+1,\, 2^T)$).
@@ -211,7 +209,7 @@ class CoxRossRubinstein:
 \[
 S_0 = s_0, \qquad S_t = S_{t-1}\xi_t,\ t=1,\dots,T,
 \]
-вычисление которой выполняется применением функции кумулятивного произведения вдоль столбцов массива \verb"xi", добавлением сверху строки из единиц и умножением на начальное условие. 
+вычисление которой выполняется применением функции кумулятивного произведения вдоль столбцов массива \verb"xi", добавлением сверху строки из единиц и умножением на начальное значение $s_0=$\;\verb"spot". 
 
 Массив выплат \verb"X" получается применением передаваемой функции \verb"payoff" к \verb"S". Считается, что она возвращает одномерный массив, состоящий из значений выплаты платежного обязательства на каждой траектории%
 \footnote{Все будет работать и в случае нескольких платежных обязательств.
@@ -222,8 +220,8 @@ S_0 = s_0, \qquad S_t = S_{t-1}\xi_t,\ t=1,\dots,T,
 Проверим работу реализованного алгоритма сначала на каком-нибудь простом случае.
 В качестве примера, вычислим с его помощью цену опциона колл из предыдущего раздела.
 \begin{python}
-model = CoxRossRubinstein(s0=100, u=0.1, d=-0.1, r=0.05)
-print(model.path_dep_price(2, lambda s: np.maximum(s[-1] - 100, 0)))  # 10.71
+model = CoxRossRubinstein(u=0.1, d=-0.1, r=0.05)
+print(model.path_dep_price(100, 2, lambda s: np.maximum(s[-1] - 100, 0))) # 10.71
 \end{python}
 Здесь функция выплаты устроена так, что из массива траекторий цены рискового актива она берет только последнюю строку (значения $S_T$) и вычисляет выплату опциона колл со страйком 100.
 Получается тот же результат, что и при использовании \verb"path_indep_price" и \verb"call_price".
@@ -231,11 +229,10 @@ print(model.path_dep_price(2, lambda s: np.maximum(s[-1] - 100, 0)))  # 10.71
 Теперь приведем более содержательный пример и вычислим цену барьерного опциона вниз-и-выход из примера \ref{crr:e:barrier} в лекции \ref{ch:crr}.
 \begin{python}
 ### crr.ipynb ##
-T = 2
 K = 95
 H = 92
 barrier_payoff = lambda s: np.maximum(s[-1] - K, 0) * np.all(s>=H, axis=0)
-print(model.path_dep_price(T, barrier_payoff))  # 13.95
+print(model.path_dep_price(100, 2, barrier_payoff))  # 13.95
 \end{python}
 Здесь выплата опциона колл умножается на индикатор того, что цена находилась не ниже барьера $H$.
 Заметим, что выражение \verb"s>=H" является массивом (такой же формы как \verb"s") и содержит значения \verb"True" или \verb"False" в зависимости от того, находится ли каждое значение цены не ниже барьера.
@@ -250,7 +247,7 @@ print(model.path_dep_price(T, barrier_payoff))  # 13.95
 Например, предыдущий фрагмент можно было бы переписать следующим образом.
 \begin{python}
 barrier_payoff = lambda s: max(s[-1] - K, 0) * np.all(s>=H)
-print(model.path_dep_price(T, lambda S : [barrier_payoff(s) for s in S.T]))
+print(model.path_dep_price(100, 2, lambda S : [barrier_payoff(s) for s in S.T]))
 \end{python}
 Здесь считается, что в \verb"barrier_payoff" передается одномерный массив \verb"s", а поэтому \verb"s[-1] - K" является скаляром, и можно воспользоваться встроенной функцией \verb"max" вместо \verb"np.maximum".
 Кроме того, не нужно указывать \verb"axis=0" при вызове \verb"np.all". 
@@ -266,12 +263,12 @@ print(model.path_dep_price(T, lambda S : [barrier_payoff(s) for s in S.T]))
 ### crr.py ###
 class CoxRossRubinstein:
     # ...
-    def american_price(self, maturity, payoff):
+    def american_price(self, spot, maturity, payoff):
         def X(t):
             N = np.arange(t+1)
-            return payoff(self.s0 * (1+self.u)**N * (1+self.d)**(t-N))
+            return payoff(spot * (1+self.u)**N * (1+self.d)**(t-N))
         V = X(maturity)
-        for t in range(maturity-1, -1, -1): # t пробегает от maturity-1 до 0
+        for t in range(maturity-1, -1, -1):  # t пробегает от maturity-1 до 0
             V[:t+1] = np.maximum(X(t),
                 (self.q*V[1:t+2] + (1-self.q)*V[:t+1])/(1+self.r))
         return V[0]    
@@ -292,16 +289,18 @@ class CoxRossRubinstein:
 По ходу обратной индукции значения функции $V(t,s)$ на шаге $t=T,T-1,\dots,0$ записываются в массив \verb"V", перезаписывая его первые $t+1$ элементов, так что элемент \verb"V[n]", где $n=0,\dots,t$, представляет значение функции $V(t, s)$ для $s=s_0(1+u)^n(1+d)^{t-n}$.
 Искомое значение цены в начальный момент времени будет записано в \verb"V[0]" на последнем шаге цикла.
 
-Используя написанную общую функцию, добавим в класс также методы вычисления цен американских опционов колл и пут (в этих функциях предполагается, что оба аргумента \verb"maturity" и \verb"strike" являются скалярами).
+Используя написанную общую функцию, добавим в класс также методы вычисления цен американских опционов колл и пут (в этих функциях предполагается, что все три аргумента \verb"spot", \verb"maturity" и \verb"strike" являются скалярами).
 \begin{python}
 ### crr.py ###
 class CoxRossRubinstein:
     # ...
-    def american_call_price(self, maturity, strike):
-        return self.american_price(lambda s: np.maximum(s-strike, 0), maturity)
-
-    def american_put_price(self, maturity, strike):
-        return self.american_price(lambda s: np.maximum(strike-s, 0), maturity)
+    def american_call_price(self, spot, maturity, strike):
+        return self.american_price(spot, maturity,
+            lambda s: np.maximum(s-strike, 0))
+    
+    def american_put_price(self, spot, maturity, strike):
+        return self.american_price(spot, maturity,
+            lambda s: np.maximum(strike-s, 0))
 \end{python}
 
 В качестве иллюстрации, найдем цену американских опционов колл и пут со страйком $K=102$ для двухшаговой модели приведенной выше (цену пут мы нашли в примере \ref{am-d:e:price} в лекции \ref{ch:american-discrete}).
@@ -309,10 +308,10 @@ class CoxRossRubinstein:
 Цены опционов пут различаются.
 \begin{python}
 ### crr.ipynb ###
-print(model.american_call_price(2, 102))  # 9.69 (американский колл)
-print(model.call_price(2, 102))           # 9.69 (европейский колл)
-print(model.american_put_price(2, 102))   # 3.37 (американский пут)
-print(model.put_price(2, 102))            # 2.21 (европейский пут)
+print(model.american_call_price(100, 2, 102))  # 9.69 (американский колл)
+print(model.call_price(100, 2, 102))           # 9.69 (европейский колл)
+print(model.american_put_price(100, 2, 102))   # 3.37 (американский пут)
+print(model.put_price(100, 2, 102))            # 2.21 (европейский пут)
 \end{python}
 
 
@@ -333,27 +332,27 @@ S_t = S_{t-1}\xi_t,
 ### crr.py ###
 class CoxRossRubinstein:
     # ...
-    def simulate(self, t, paths, rng=None):
+    def simulate(self, s0, t, paths, rng=None):
         if rng is None:
             rng = np.random.default_rng()  
         xi = np.where(rng.uniform(size=(t, paths)) < self.q, 1+self.u, 1+self.d)
-        return self.s0*np.vstack((np.ones(paths), np.cumprod(xi, axis=0)))
+        return s0*np.vstack((np.ones(paths), np.cumprod(xi, axis=0)))
 \end{python}
-Эта функция принимает целочисленные аргументы \verb"t" (последний момент времени) и \verb"paths" (количество траекторий), а также объект генератора случайных чисел 
-\verb"rng". Если \verb"rng" равен \py{None}, то будет использован генератор по умолчанию.
+Эта функция принимает целочисленные аргументы \verb"t" (последний момент времени) и \verb"paths" (количество траекторий), а также начальное значение цены \verb"s0" (скаляр) и объект генератора случайных чисел \verb"rng".
+Если \verb"rng" равен \py{None}, то будет использован генератор по умолчанию.
 Если нужна воспроизводимость результатов, то следует передать заранее созданный генератор с фиксированным начальным состоянием (см.~замечание \ref{np:r:seed} в практикуме \ref{ch:numpy}).
 
 Массив \verb"xi" составлен из столбцов, содержащих значения $\xi_1,\dots,\xi_T$ для каждой симулированной траектории: \verb"rng.uniform(size=(t, paths)) < self.q" дает двумерный массив, составленный из значений \verb"True" или \verb"False" с вероятностями $q$ и $1-q$, а затем к нему применяется функция выбора \verb"np.where" подобно тому, как это делалось разделе \ref{pr-crr:s:path-dep}.
 Из массива \verb"xi" получается массив траекторий цен, опять же, аналогично коду в разделе \ref{pr-crr:s:path-dep}.
 
 В качестве примера, приводимый ниже фрагмент кода симулирует небольшое число траекторий и строит их графики.
-В следующем практикуме мы увидим, как пользоваться этой функцией в методе \mc.
+В дальнейшем мы увидим, как пользоваться этой функцией в методе \mc.
 \begin{python}
 ### crr.ipynb ###
 # 5 траекторий в 50-шаговой модели
-model = CoxRossRubinstein(s0=100, u=0.02, d=-0.02)
-plt.plot(model.simulate(50, 5))
-plt.xticks(range(0, 51, 10));  # Сделать отметки по оси x через каждые 10 шагов
+model = CoxRossRubinstein(u=0.02, d=-0.02)
+plt.plot(model.simulate(100, 50, 5))
+plt.xticks(range(0, 51, 10)); # Сделать отметки по оси x через каждые 10 шагов
 \end{python}
 
 \noindent
@@ -383,14 +382,14 @@ fig, ax = plt.subplots(2, 2, figsize=(10,6), squeeze=False)
 fig.subplots_adjust(hspace=0.4)
 
 # Модель Блэка-Шоулса и цены опционов в ней
-bs_model = BlackScholes(s0, sigma, r)     
-K = np.linspace(50, 200, 100)   # диапазон страйков
-bs_price = bs_model.call_price(T, K)
+bs_model = BlackScholes(sigma, r)
+K = np.linspace(50, 200, 100) # диапазон страйков
+bs_price = bs_model.call_price(s0, T, K)
 
 for i, n in enumerate([10, 100]):
     # Цены опционов и их волатильность в модели Кокса-Росса-Рубинштейна
-    crr_model = CoxRossRubinstein(s0, sigma/sqrt(n), -sigma/sqrt(n), r/n)
-    crr_price = crr_model.call_price(T*n, K)
+    crr_model = CoxRossRubinstein(sigma/sqrt(n), -sigma/sqrt(n), r/n)
+    crr_price = crr_model.call_price(s0, T*n, K)
     crr_iv = implied_vol(s0*exp(r*T), T, K, crr_price, discount_factor=exp(-r*T))
 
     # Слева будут графики цен
@@ -407,7 +406,7 @@ for i, n in enumerate([10, 100]):
     ax[i,1].set_ylim(0.25, 0.35)
     ax[i,1].legend(loc="upper right", frameon=False)
     ax[i,1].set_title(f"Подразумеваемая волатильность (n={n})", fontsize=10,
-        fontweight="bold")
+    fontweight="bold")
     ax[i,1].set_xlabel("Страйк")
     ax[i,1].set_ylabel("Волатильность")
 \end{python}
