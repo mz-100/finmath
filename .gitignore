@@ -5,6 +5,7 @@
 *.bcf
 *.blg
 *.pdf
+!pdfs/*.pdf
 *.ptc
 *.run.xml
 *.toc
