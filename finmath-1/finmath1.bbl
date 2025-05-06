@@ -39,6 +39,7 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{17}
       \field{journaltitle}{Annales Scientifiques de l’École Normale Supérieure}
       \field{langid}{french}
       \field{title}{Théorie de la Spéculation}
@@ -68,6 +69,7 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{3}
       \field{journaltitle}{Journal of Financial Economics}
       \field{langid}{english}
       \field{title}{The pricing of commodity contracts}
@@ -104,6 +106,7 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{81}
       \field{journaltitle}{Journal of political economy}
       \field{langid}{english}
       \field{title}{The pricing of options and corporate liabilities}
@@ -146,6 +149,7 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{29}
       \field{journaltitle}{Stochastics}
       \field{langid}{english}
       \field{title}{Equivalent martingale measures and no-arbitrage in stochastic securities market models}
@@ -251,6 +255,33 @@
       \field{title}{Monte Carlo Methods in Financial Engineering}
       \field{year}{2003}
     \endentry
+    \entry{Haug06}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c87809349f6815f47d58a605848a4245}{%
+           family={Haug},
+           familyi={H\bibinitperiod},
+           given={Espen\bibnamedelima Gaarder},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{c87809349f6815f47d58a605848a4245}
+      \strng{fullhash}{c87809349f6815f47d58a605848a4245}
+      \strng{fullhashraw}{c87809349f6815f47d58a605848a4245}
+      \strng{bibnamehash}{c87809349f6815f47d58a605848a4245}
+      \strng{authorbibnamehash}{c87809349f6815f47d58a605848a4245}
+      \strng{authornamehash}{c87809349f6815f47d58a605848a4245}
+      \strng{authorfullhash}{c87809349f6815f47d58a605848a4245}
+      \strng{authorfullhashraw}{c87809349f6815f47d58a605848a4245}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{The Complete Guide to Option Pricing Formulas}
+      \field{year}{2006}
+    \endentry
     \entry{Jaeckel06}{article}{}{}
       \name{author}{1}{}{%
         {{hash=99aad06857552d3caf3070dce49785f0}{%
@@ -272,6 +303,7 @@
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{26}
       \field{journaltitle}{Wilmott}
       \field{langid}{english}
       \field{title}{By implication}
@@ -302,6 +334,7 @@
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{2015}
       \field{journaltitle}{Wilmott}
       \field{langid}{english}
       \field{title}{Let's be rational}
@@ -338,6 +371,7 @@
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{35}
       \field{journaltitle}{Séminaire de probabilités de Strasbourg}
       \field{langid}{english}
       \field{title}{A teacher's note on no-arbitrage criteria}
@@ -431,6 +465,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{addendum}{\begin{otherlanguage}{russian}Перевод: \fullcite[546]{Kolmogorov38}\end{otherlanguage}}
+      \field{internalsortvolume}{104}
       \field{journaltitle}{Mathematische Annalen}
       \field{langid}{german}
       \field{title}{Über die analytischen Methoden in der Wahrscheinlichkeitsrechnung}
@@ -496,6 +531,43 @@
       \field{langid}{english}
       \field{title}{Asymptotic statistics}
       \field{year}{1998}
+    \endentry
+    \entry{BakhvalovZhidkovKobelkov}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=490d3a67da2bdedecec9ab2f0982b8d4}{%
+           family={Бахвалов},
+           familyi={Б\bibinitperiod},
+           given={Николай\bibnamedelima Сергеевич},
+           giveni={Н\bibinitperiod\bibinitdelim С\bibinitperiod}}}%
+        {{hash=c5d1e1f19969a1d44decfff7bbd6d9cb}{%
+           family={Жидков},
+           familyi={Ж\bibinitperiod},
+           given={Николай\bibnamedelima Петрович},
+           giveni={Н\bibinitperiod\bibinitdelim П\bibinitperiod}}}%
+        {{hash=0c53b548576913ec27fab027aaecdafa}{%
+           family={Кобельков},
+           familyi={К\bibinitperiod},
+           given={Георгий\bibnamedelima Михайлович},
+           giveni={Г\bibinitperiod\bibinitdelim М\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{fullhash}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{fullhashraw}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{bibnamehash}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{authorbibnamehash}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{authornamehash}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{authorfullhash}{139227be2c5771b3606ad0eea3d7e184}
+      \strng{authorfullhashraw}{139227be2c5771b3606ad0eea3d7e184}
+      \field{sortinit}{Б}
+      \field{sortinithash}{5261f8dfa92113358b76bb09b8629977}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Численные методы}
+      \field{year}{1987}
     \endentry
     \entry{Bogachev03}{mvbook}{}{}
       \name{author}{1}{}{%

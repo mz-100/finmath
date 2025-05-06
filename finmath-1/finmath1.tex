@@ -5,7 +5,7 @@
 \usepackage[T2A]{fontenc}
 \usepackage[left=3cm,right=3cm,top=1.5cm,bottom=2.5cm]{geometry}
 \usepackage[english,russian,german,french,main=russian]{babel}
-\usepackage{amsmath,amssymb,amsthm,enumitem,setspace,titletoc,afterpage,caption,subcaption,appendix,fancyhdr,indentfirst,csquotes}
+\usepackage{amsmath,amssymb,amsthm,enumitem,setspace,titletoc,afterpage,caption,subcaption,appendix,fancyhdr,indentfirst,csquotes,multirow}
 \usepackage[overload]{empheq}     % для системы уравнений с фигурной скобкой и нумерацией
 \usepackage[colorlinks,allcolors=black]{hyperref}
 \usepackage[small,bf,newparttoc]{titlesec}
@@ -38,7 +38,7 @@
 \renewcommand{\thesection}{\arabic{section}}
 \titleformat{\section}[hang]{\bfseries\large}{\thesection.}{0.5em}{}
 \titleformat{\subsection}[hang]{\bfseries}{\thesubsection.}{0.5em}{}
-\titleformat{\subsubsection}[hang]{\it}{\thesubsubsection.}{0.5em}{}
+\titleformat{\subsubsection}[hang]{\itshape\bfseries}{\thesubsubsection.}{0.5em}{}
 \titleformat{\paragraph}[runin]{\it}{\theparagraph)}{0.5em}{}
 
 % Нумерация страниц
@@ -144,6 +144,7 @@ frame code={\path[draw=mintedframe, fill=mintedbackground](frame.south west) rec
 \newcommand{\crr}{Кокса"--~Росса"--~Рубинштейна}
 \newcommand{\bs}{Блэка"--~Шоулза}
 \newcommand{\mc}{Монте-Карло}
+\newcommand{\cn}{Кранка"--~Николсона}
 \shorthandoff{"}
 
 % Математика
@@ -227,6 +228,7 @@ frame code={\path[draw=mintedframe, fill=mintedbackground](frame.south west) rec
 \include{bs1}
 \include{bs2}
 \include{iv}
+\include{fdm}
 \include{mc}
 % \include{exam-questions}
 % Дополнительный материал
