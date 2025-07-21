@@ -1,0 +1,185 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ChernyEngelbert}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=99d0f678e0cd9d45c458c70b56c2a849}{%
+           family={Cherny},
+           familyi={C\bibinitperiod},
+           given={Alexander\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ac16126ab785cff6bc64e20ce27b589b}{%
+           family={Engelbert},
+           familyi={E\bibinitperiod},
+           given={Hans-Jürgen},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{fullhash}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{fullhashraw}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{bibnamehash}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{authorbibnamehash}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{authornamehash}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{authorfullhash}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \strng{authorfullhashraw}{e9bd58cc4cf09e4f26b2229d675f6984}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Singular Stochastic Differential Equations}
+      \field{year}{2005}
+    \endentry
+    \entry{Cont01}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4adbb1a85104895dfcc25d4e2cac8cce}{%
+           family={Cont},
+           familyi={C\bibinitperiod},
+           given={Rama},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{fullhash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{fullhashraw}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{bibnamehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authorbibnamehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authornamehash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authorfullhash}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \strng{authorfullhashraw}{4adbb1a85104895dfcc25d4e2cac8cce}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantitative Finance}
+      \field{langid}{english}
+      \field{title}{Empirical properties of asset returns: stylized facts and statistical issues}
+      \field{year}{2001}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{223}
+      \range{pages}{1}
+      \field{volume}{1}
+      \range{volume}{1}
+    \endentry
+    \entry{EberleinKallsen19}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=2195b017892016cdc62ea507b8a87f91}{%
+           family={Eberlein},
+           familyi={E\bibinitperiod},
+           given={Ernst},
+           giveni={E\bibinitperiod}}}%
+        {{hash=36c4cd5f43b35f1971f5eb0ecfef32e7}{%
+           family={Kallsen},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{fullhash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{fullhashraw}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{bibnamehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authorbibnamehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authornamehash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authorfullhash}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \strng{authorfullhashraw}{735390f6383f58ebd8ac78d1e1bfc0ab}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Mathematical Finance}
+      \field{year}{2019}
+    \endentry
+    \entry{KaratzasShreve91}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=f2b9c76604ea66b2ab28d18a454d3fbf}{%
+           family={Karatzas},
+           familyi={K\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9e110e7c548ab825117ed32cb12bdfd3}{%
+           family={Shreve},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima E},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{fullhash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{fullhashraw}{53d5a81a823486de515935e3bf6435a6}
+      \strng{bibnamehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authorbibnamehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authornamehash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authorfullhash}{53d5a81a823486de515935e3bf6435a6}
+      \strng{authorfullhashraw}{53d5a81a823486de515935e3bf6435a6}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd ed.}
+      \field{langid}{english}
+      \field{title}{Brownian Motion and Stochastic Calculus}
+      \field{year}{1991}
+    \endentry
+    \entry{JacodShiryaev94}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=79eaeb74af5ab1756bf00f19636ca9e5}{%
+           family={Жакод},
+           familyi={Ж\bibinitperiod},
+           given={Жан},
+           giveni={Ж\bibinitperiod}}}%
+        {{hash=f9348d5dad43305a394be356b7977ee9}{%
+           family={Ширяев},
+           familyi={Ш\bibinitperiod},
+           given={Альберт\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Физматлит}%
+      }
+      \strng{namehash}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{fullhash}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{fullhashraw}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{bibnamehash}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{authorbibnamehash}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{authornamehash}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{authorfullhash}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \strng{authorfullhashraw}{71ea1f5e6d8f200afaac9cc3b82a4efa}
+      \field{sortinit}{Ж}
+      \field{sortinithash}{e0112b37c31ba0ed0b1bd2e7ba383297}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Предельные теоремы для случайных процессов}
+      \field{year}{1994}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

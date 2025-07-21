@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt,oneside]{extbook}
+\usepackage{../lectures}
+\addbibresource{../finmath.bib}
+
+
+\title{Финансовая математика --- 2\\[-0.5em]
+{\large (<<Модели стохастической волатильности>>)} \\[0.5em]
+\Large\it Курс лекций}
+\author{Лектор: Михаил Житлухин}
+
+\date{\footnotesize{\texttt{Версия \thedate}}}
+
+\hypersetup{
+  pdftitle={Финансовая математика -- 2: Модели стохастической волатильности},
+  pdfauthor={Михаил Житлухин}
+}
+
+\begin{document}
+\onehalfspacing
+\maketitle
+
+\tableofcontents
+%\include{about}
+\include{intro}
+\include{fundamental}
+\include{sde}
+
+\clearpage
+\titlecontents{chapter}[0em]{}{}{}{\dotfill\contentspage}
+\phantomsection
+\addtocontents{toc}{\vspace{1em}}
+\chapter*{Список литературы}
+\addcontentsline{toc}{chapter}{\textbf{Список литературы}}
+
+\defbibheading{main}{\section*{Основные источники}}
+\defbibheading{aux}{\section*{Дополнительные источники}}
+\printbibliography[keyword=fm2-main,heading=main]
+\printbibliography[notkeyword=fm2-main,heading=aux]
+
+\end{document}
