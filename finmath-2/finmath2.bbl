@@ -19,6 +19,74 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{AndreasenHuge10}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=34add06aee9485dab7923237536d9398}{%
+           family={Andreasen},
+           familyi={A\bibinitperiod},
+           given={Jesper},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0e4f0db33a9ca8d602da725ac3a24152}{%
+           family={Huge},
+           familyi={H\bibinitperiod},
+           given={Brian\bibnamedelima Norsk},
+           giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{203b7198d1b71759e05127cd59f44037}
+      \strng{fullhash}{203b7198d1b71759e05127cd59f44037}
+      \strng{fullhashraw}{203b7198d1b71759e05127cd59f44037}
+      \strng{bibnamehash}{203b7198d1b71759e05127cd59f44037}
+      \strng{authorbibnamehash}{203b7198d1b71759e05127cd59f44037}
+      \strng{authornamehash}{203b7198d1b71759e05127cd59f44037}
+      \strng{authorfullhash}{203b7198d1b71759e05127cd59f44037}
+      \strng{authorfullhashraw}{203b7198d1b71759e05127cd59f44037}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://ssrn.com/abstract=1694972}}
+      \field{title}{Volatility interpolation}
+      \field{year}{2010}
+    \endentry
+    \entry{BreedenLitzenberger78}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4f844f5106b47947356f4b20ad0470e4}{%
+           family={Breeden},
+           familyi={B\bibinitperiod},
+           given={Douglas\bibnamedelima T},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6effe8bfca5639fbaf785cd77991ba54}{%
+           family={Litzenberger},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima H},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{fullhash}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{fullhashraw}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{bibnamehash}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{authorbibnamehash}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{authornamehash}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{authorfullhash}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \strng{authorfullhashraw}{3bafbcb2bb6e50d9de7c0729329e9d01}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business}
+      \field{langid}{english}
+      \field{title}{Prices of state-contingent claims implicit in option prices}
+      \field{year}{1978}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{621\bibrangedash 651}
+      \range{pages}{31}
+      \field{volume}{51}
+      \range{volume}{1}
+    \endentry
     \entry{ChernyEngelbert}{book}{}{}
       \name{author}{2}{}{%
         {{hash=99d0f678e0cd9d45c458c70b56c2a849}{%
@@ -82,6 +150,81 @@
       \field{volume}{1}
       \range{volume}{1}
     \endentry
+    \entry{DesmettreLeobacherRogers21}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=27ad4d7bf0852277791d3fc9eb5fd2cc}{%
+           family={Desmettre},
+           familyi={D\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fc8ab83b358709bd9873e0b9dd1ac020}{%
+           family={Leobacher},
+           familyi={L\bibinitperiod},
+           given={Gunther},
+           giveni={G\bibinitperiod}}}%
+        {{hash=59e81ab5f62166747d2d31966612496a}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={L\bibnamedelima C\bibnamedelima G},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{fullhash}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{fullhashraw}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{bibnamehash}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{authorbibnamehash}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{authornamehash}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{authorfullhash}{8a8bb80c593178d6bfeec671a9640186}
+      \strng{authorfullhashraw}{8a8bb80c593178d6bfeec671a9640186}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Finance and Stochastics}
+      \field{langid}{english}
+      \field{title}{Change of drift in one-dimensional diffusions}
+      \field{year}{2021}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{359\bibrangedash 381}
+      \range{pages}{23}
+      \field{volume}{25}
+      \range{volume}{1}
+    \endentry
+    \entry{Dupire94}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9a88af8a4cf0b0a8b5072b916a82c45a}{%
+           family={Dupire},
+           familyi={D\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{fullhash}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{fullhashraw}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{bibnamehash}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{authorbibnamehash}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{authornamehash}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{authorfullhash}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \strng{authorfullhashraw}{9a88af8a4cf0b0a8b5072b916a82c45a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Risk}
+      \field{langid}{english}
+      \field{title}{Pricing with a smile}
+      \field{year}{1994}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{18\bibrangedash 20}
+      \range{pages}{3}
+      \field{volume}{7}
+      \range{volume}{1}
+    \endentry
     \entry{EberleinKallsen19}{book}{}{}
       \name{author}{2}{}{%
         {{hash=2195b017892016cdc62ea507b8a87f91}{%
@@ -113,6 +256,79 @@
       \field{langid}{english}
       \field{title}{Mathematical Finance}
       \field{year}{2019}
+    \endentry
+    \entry{HaganWoodward99}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=067f5fcee09845c4df74dde207a89c67}{%
+           family={Hagan},
+           familyi={H\bibinitperiod},
+           given={Patrick\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=27d413e9fadb81f59e52587966be6250}{%
+           family={Woodward},
+           familyi={W\bibinitperiod},
+           given={Diana\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{fullhash}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{fullhashraw}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{bibnamehash}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{authorbibnamehash}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{authornamehash}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{authorfullhash}{756cb7eed3c72148df82e6c03fc9e07d}
+      \strng{authorfullhashraw}{756cb7eed3c72148df82e6c03fc9e07d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Mathematical Finance}
+      \field{langid}{english}
+      \field{title}{Equivalent Black volatilities}
+      \field{year}{1999}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{147\bibrangedash 157}
+      \range{pages}{11}
+      \field{volume}{6}
+      \range{volume}{1}
+    \endentry
+    \entry{HamzaKlebaner22}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=3c2b546232d7094e15336e84680e006e}{%
+           family={Hamza},
+           familyi={H\bibinitperiod},
+           given={Kais},
+           giveni={K\bibinitperiod}}}%
+        {{hash=99a3547a5815d3759d996216c1681057}{%
+           family={Klebaner},
+           familyi={K\bibinitperiod},
+           given={FC},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{fullhash}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{fullhashraw}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{bibnamehash}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{authorbibnamehash}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{authornamehash}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{authorfullhash}{de568e1b450f122f5a325a6ba0432dc5}
+      \strng{authorfullhashraw}{de568e1b450f122f5a325a6ba0432dc5}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stochastic Processes and their Applications}
+      \field{langid}{english}
+      \field{title}{Expectation of local times and the Dupire formula}
+      \field{year}{2022}
+      \field{pages}{782\bibrangedash 787}
+      \range{pages}{6}
+      \field{volume}{150}
+      \range{volume}{1}
     \endentry
     \entry{KaratzasShreve91}{book}{}{}
       \name{author}{2}{}{%
@@ -147,6 +363,70 @@
       \field{title}{Brownian Motion and Stochastic Calculus}
       \field{year}{1991}
     \endentry
+    \entry{MusielaRutkowski09}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=a7b1faec1053188a189124ed6c22eaef}{%
+           family={Musiela},
+           familyi={M\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=37f06b5147219060bf49598dad098883}{%
+           family={Rutkowski},
+           familyi={R\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{fullhash}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{fullhashraw}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{bibnamehash}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{authorbibnamehash}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{authornamehash}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{authorfullhash}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \strng{authorfullhashraw}{9e9a9614d7f619a0cddf2de030d8a11e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Martinale Methods in Financial Modelling}
+      \field{year}{2009}
+    \endentry
+    \entry{RevuzYor}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=d22ba828552db2e93a2f5a9c4a3b82ab}{%
+           family={Revuz},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1e58f52d7501e0df28f20cd5871cbc80}{%
+           family={Yor},
+           familyi={Y\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{fullhash}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{fullhashraw}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{bibnamehash}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{authorbibnamehash}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{authornamehash}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{authorfullhash}{1a41fb2b12520997054640e1b7417dc2}
+      \strng{authorfullhashraw}{1a41fb2b12520997054640e1b7417dc2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Continuous Martingales and Brownian Motion}
+      \field{year}{1991}
+    \endentry
     \entry{JacodShiryaev94}{book}{}{}
       \name{author}{2}{}{%
         {{hash=79eaeb74af5ab1756bf00f19636ca9e5}{%
@@ -178,6 +458,34 @@
       \field{langid}{russian}
       \field{title}{Предельные теоремы для случайных процессов}
       \field{year}{1994}
+    \endentry
+    \entry{Shiryaev04}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9348d5dad43305a394be356b7977ee9}{%
+           family={Ширяев},
+           familyi={Ш\bibinitperiod},
+           given={Альберт\bibnamedelima Николаевич},
+           giveni={А\bibinitperiod\bibinitdelim Н\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {МЦНМО}%
+      }
+      \strng{namehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{fullhash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{fullhashraw}{f9348d5dad43305a394be356b7977ee9}
+      \strng{bibnamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorbibnamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authornamehash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorfullhash}{f9348d5dad43305a394be356b7977ee9}
+      \strng{authorfullhashraw}{f9348d5dad43305a394be356b7977ee9}
+      \field{sortinit}{Ш}
+      \field{sortinithash}{11967b4eaab40d50443e8eae07dc465c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Вероятность}
+      \field{year}{2004}
+      \keyw{fm1-main}
     \endentry
   \enddatalist
 \endrefsection
