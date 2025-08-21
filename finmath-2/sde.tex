@@ -289,6 +289,55 @@ X_u^n = x + \int_{t}^u a^n(s,X_s)ds + \sum_{i=1}^d \int_{t}^u b^{ni}(s,X_s) dW_s
 \end{proof}
 
 
+\section{Многомерная формула \fc}
+
+Приведем многомерный аналог формулы \fc, которая нам уже встречалась в курсе \intro.
+
+Пусть заданы функции 
+\[
+a(t,x)\colon \R_+\times \R^n \to \R^n, \quad
+b(t,x)\colon \R_+\times \R^n \to \R^{n\times n}, \quad
+c(t,x)\colon \R_+\times \R^n \to \R.
+\]
+Здесь, как и ранее, $x=(x^1,\dots,x^n)\in\R^n$ обозначает $n$-мерную пространственную переменную, а $t\ge 0$ "--- время.
+
+Рассмотрим задачу Коши для параболического уравнения с частными производными вида
+\begin{align}
+\label{sde:fc-cauchy-1}
+&\frac{\partial V}{\partial t}(t,x) + \sum_{i=1}^n a^i(t,x)\frac{\partial V}{\partial x^i}(t,x) + 
+\sum_{i,j=1}^n b^{ij}(t,x)\frac{\partial^2 V}{\partial x^i \partial x^j}(t,x)
+= c(t,x)V(t,x)\\
+\label{sde:fc-cauchy-2}
+&V(T,x) = f(x),
+\end{align}
+где $t\in[0,T]$, $x\in\R^n$.
+Формула \fc\ дает \emph{вероятностное представление} решения этой задачи в терминах процесса $X_t$, удовлетворяющего уравнению 
+\begin{equation}
+\label{sde:fc-process}
+dX_t = a(t,X_t) dt + b(t,X_t) dW_t.
+\end{equation}
+
+\begin{theorem}[формула Фейнмана--Каца]
+Пусть функции $a(t,x)$, $b(t,x)$, $c(t,x)$, $f(x)$ достаточно <<хорошие>>.
+Тогда решение задачи  \eqref{sde:fc-cauchy-1}--\eqref{sde:fc-cauchy-2} представимо в виде
+\begin{equation}
+\label{sde:fc-v}
+V(t,x) = \E\left(e^{-\int_t^T c(s,X_s)ds} f(X_T) \;\bigg|\; X_t = x\right),
+\end{equation}
+и, в частности, это решение единственно в классе функций $C^{1,2}$ на $[0,T)\times \R^n$.
+\end{theorem}
+
+\begin{remark}
+Достаточные условия <<хорошести>> функций $a,b,c,f$, при которых справедлива формула \fc, следующие (см., например, \cite{KaratzasShreve91}, гл.~5, разд.~5.7.B):
+\begin{enumerate}
+\item $f$ непрерывна, а также либо $|f(x)| \le L(1+ \|x\|^p)$ для некоторых констант $L,p>0$, либо $f(x)\ge 0$ для всех $x$;
+\item $a$ и $b$ непрерывны и удовлетворяют условию линейного роста $\|a(t,x)\| + \|b(t,x)\| \le K(1+|x|)$ с константой $K$ для всех $t,x$;
+\item уравнение \eqref{sde:fc-process} имеет единственное слабое решение для всех $t\in[0,T]$ и $x\in\R^n$;
+\item задача \eqref{sde:fc-cauchy-1}--\eqref{sde:fc-cauchy-2} имеет решение $V(t,x)$ являющееся функцией класса $C^{1,2}$ на $[0,T)\times\R^n$, причем $|V(t,x)| \le M(1+\|x\|^q)$ с константами $M,q>0$.
+\end{enumerate}
+\end{remark}
+
+
 \section{Примеры}
 \subsection{Линейное уравнение}
 
@@ -398,4 +447,5 @@ v(x) = \int_x^1 \int_y^1 e^{2\int_y^z \frac{\kappa(\theta-u)}{\xi^2 u} du} \frac
 \item Теорема Энгельберта"--~Шмидта (произвольный снос): достаточное условие слабого существования и слабой единственности решения интервале.
 \item Теорема Миятовича"--~Урусова: критерий мартингальности решения.
 \item Теорема Феллера: критерий выхода из интервала.
+\item Формула \fc: вероятностное представление решения задачи Коши для параболического уравнения с частными производными.
 \end{itemize}
