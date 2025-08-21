@@ -257,6 +257,40 @@
       \field{title}{Mathematical Finance}
       \field{year}{2019}
     \endentry
+    \entry{GilPelaez51}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=cceeb638e697ccdfb7db15ac1e799dcb}{%
+           family={Gil-Pelaez},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{fullhash}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{fullhashraw}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{bibnamehash}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{authorbibnamehash}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{authornamehash}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{authorfullhash}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \strng{authorfullhashraw}{cceeb638e697ccdfb7db15ac1e799dcb}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{langid}{english}
+      \field{title}{Note on the inversion theorem}
+      \field{year}{1951}
+      \field{number}{3\bibrangedash 4}
+      \range{number}{2}
+      \field{pages}{481\bibrangedash 482}
+      \range{pages}{2}
+      \field{volume}{38}
+      \range{volume}{1}
+    \endentry
     \entry{HaganWoodward99}{article}{}{}
       \name{author}{2}{}{%
         {{hash=067f5fcee09845c4df74dde207a89c67}{%
@@ -488,6 +522,7 @@
       \keyw{fm1-main}
     \endentry
   \enddatalist
+  \missing{Albrecher+05}
 \endrefsection
 \endinput
 
