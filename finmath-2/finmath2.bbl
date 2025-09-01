@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{Albrecher+07}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=f45fe7e87093eb7ec9971d6f10c5c61f}{%
+           family={Albrecher},
+           familyi={A\bibinitperiod},
+           given={Hansjörg},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bf30cc5f43921c4f91540b119e0c3fdf}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d4c1a086254c12a197617d6021d1f00f}{%
+           family={Schoutens},
+           familyi={S\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cf5d611a4e01af1f71ffc5052d6d04d6}{%
+           family={Tistaert},
+           familyi={T\bibinitperiod},
+           given={Jurgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a4c0219638032fc80ff28dd29b5816a}
+      \strng{fullhash}{cad0e59640929d3dd6b8f0247e7ee62a}
+      \strng{fullhashraw}{cad0e59640929d3dd6b8f0247e7ee62a}
+      \strng{bibnamehash}{cad0e59640929d3dd6b8f0247e7ee62a}
+      \strng{authorbibnamehash}{cad0e59640929d3dd6b8f0247e7ee62a}
+      \strng{authornamehash}{0a4c0219638032fc80ff28dd29b5816a}
+      \strng{authorfullhash}{cad0e59640929d3dd6b8f0247e7ee62a}
+      \strng{authorfullhashraw}{cad0e59640929d3dd6b8f0247e7ee62a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{The little {H}eston trap}
+      \field{year}{2007}
+    \endentry
     \entry{AndreasenHuge10}{misc}{}{}
       \name{author}{2}{}{%
         {{hash=34add06aee9485dab7923237536d9398}{%
@@ -47,6 +86,7 @@
       \field{note}{\url{https://ssrn.com/abstract=1694972}}
       \field{title}{Volatility interpolation}
       \field{year}{2010}
+      \keyw{fm2-main}
     \endentry
     \entry{BreedenLitzenberger78}{article}{}{}
       \name{author}{2}{}{%
@@ -149,6 +189,7 @@
       \range{pages}{1}
       \field{volume}{1}
       \range{volume}{1}
+      \keyw{fm2-main}
     \endentry
     \entry{DesmettreLeobacherRogers21}{article}{}{}
       \name{author}{3}{}{%
@@ -224,6 +265,7 @@
       \range{pages}{3}
       \field{volume}{7}
       \range{volume}{1}
+      \keyw{fm2-main}
     \endentry
     \entry{EberleinKallsen19}{book}{}{}
       \name{author}{2}{}{%
@@ -256,6 +298,7 @@
       \field{langid}{english}
       \field{title}{Mathematical Finance}
       \field{year}{2019}
+      \keyw{fm2-main}
     \endentry
     \entry{GilPelaez51}{article}{}{}
       \name{author}{1}{}{%
@@ -396,6 +439,7 @@
       \field{langid}{english}
       \field{title}{Brownian Motion and Stochastic Calculus}
       \field{year}{1991}
+      \keyw{fm2-main}
     \endentry
     \entry{MusielaRutkowski09}{book}{}{}
       \name{author}{2}{}{%
@@ -428,6 +472,7 @@
       \field{langid}{english}
       \field{title}{Martinale Methods in Financial Modelling}
       \field{year}{2009}
+      \keyw{fm2-main}
     \endentry
     \entry{RevuzYor}{book}{}{}
       \name{author}{2}{}{%
@@ -522,7 +567,6 @@
       \keyw{fm1-main}
     \endentry
   \enddatalist
-  \missing{Albrecher+05}
 \endrefsection
 \endinput
 

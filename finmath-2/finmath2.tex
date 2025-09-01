@@ -36,9 +36,11 @@
 \chapter*{Список литературы}
 \addcontentsline{toc}{chapter}{\textbf{Список литературы}}
 
-\defbibheading{main}{\section*{Основные источники}}
+\defbibheading{mainbooks}{\section*{Основные источники: книги}}
+\defbibheading{mainpapers}{\section*{Основные источники: статьи}}
 \defbibheading{aux}{\section*{Дополнительные источники}}
-\printbibliography[keyword=fm2-main,heading=main]
+\printbibliography[keyword=fm2-main,heading=mainbooks,type=book]
+\printbibliography[keyword=fm2-main,heading=mainpapers,type=article]
 \printbibliography[notkeyword=fm2-main,heading=aux]
 
 \end{document}
