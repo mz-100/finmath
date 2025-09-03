@@ -44,6 +44,18 @@ def vectorize_methods(methods_list):
 
 
 def derivative(f, x0, dx, n):
+    """
+    Calculate the nth order derivative of a function at a point using central difference.
+
+    Args:
+        f (callable): The function to differentiate.
+        x0 (float): The point at which to evaluate the derivative.
+        dx (float): The step size for finite differences.
+        n (int): The order of the derivative. Only n=1 and n=2 are supported.
+
+    Returns:
+        float: The nth order derivative of the function at x0.
+    """
     if n == 1:
         return (f(x0 + dx) - f(x0 - dx)) / (2 * dx)
     elif n == 2:
