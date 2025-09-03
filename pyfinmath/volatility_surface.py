@@ -93,22 +93,20 @@ def volatility_surface_from_cboe(cboe_file, feds_file=None, min_maturity=None, m
             return call_delta - 1
     options['delta'] = options.apply(delta, axis=1)
 
-    return options.sort_values(by=['time_to_maturity', 'strike'])
+    return options[(options.time_to_maturity >= min_maturity) 
+                   & (options.time_to_maturity <= max_maturity)].sort_values(by=['time_to_maturity', 'strike'])
 
 
-def choose_from_iv_surface(options, maturities, n_strikes=None, min_call_delta=0, max_put_delta = 0, as_numpy=False):
+def choose_from_iv_surface(options, maturities, n_strikes=None, min_call_delta=0, max_put_delta = 0):
     chosen_options = []
     for m in maturities:
         op = options[(options.maturity == m) 
                   & (((options.type == 'C') & (options.delta >= min_call_delta))
                      |((options.type == 'P') & (options.delta <= max_put_delta)))]
         if n_strikes is not None:
-            idx = np.linspace(0, len(op)-1, n_strikes, dtype=int)
+            strikes = np.linspace(op.strike.min(), op.strike.max(), n_strikes)
+            idx =  np.unique([np.abs(op.strike - k).argmin() for k in strikes])
             chosen_options.append(op.iloc[idx])
         else:
             chosen_options.append(op)
-    if not as_numpy:
-        return pd.concat(chosen_options)
-    else:
-        op = pd.concat(chosen_options)
-        return op.forward_price.to_numpy(), op.time_to_maturity.to_numpy(), op.strike.to_numpy(), op.implied_vol.to_numpy()
+    return pd.concat(chosen_options)

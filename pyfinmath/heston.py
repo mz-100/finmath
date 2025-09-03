@@ -87,39 +87,41 @@ class Heston:
     sigma: float
     rho: float
 
-    def call_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08):
+    def call_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08, limit=500):
         return discount_factor * forward_price * (
             (1 - strike/forward_price)/2 +
             1/math.pi * intg.quad(
                 LowLevelCallable(_heston_price_integrand.ctypes),
                 0, math.inf,
                 args=(maturity, math.log(forward_price/strike), self.v0, self.kappa, self.theta, self.sigma, self.rho),
-                epsabs=epsabs,
-                epsrel=epsrel)[0]
+                epsabs=epsabs, 
+                epsrel=epsrel,
+                limit=limit)[0]
             )
 
-    def put_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08):
+    def put_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08, limit=500):
         # Используется паритет колл-пут
-        return self.call_price(forward_price, maturity, strike, discount_factor, epsabs, epsrel) - discount_factor*(forward_price - strike)
+        return self.call_price(forward_price, maturity, strike, discount_factor, epsabs, epsrel, limit) - discount_factor*(forward_price - strike)
 
-    def implied_vol(self, forward_price, maturity, strike, price_epsabs=1.49e-08, price_epsrel=1.49e-08, iv_eps=1e-12, iv_max_iter=100):
+    def implied_vol(self, forward_price, maturity, strike, price_epsabs=1.49e-08, price_epsrel=1.49e-08, price_limit=500, iv_eps=1e-12, iv_max_iter=100):
         return implied_vol(forward_price, maturity, strike,
-                           self.call_price(forward_price, maturity, strike, epsabs=price_epsabs, epsrel=price_epsrel),
+                           self.call_price(forward_price, maturity, strike, epsabs=price_epsabs, epsrel=price_epsrel, limit=price_limit),
                            call_or_put_flag=1, eps=iv_eps, max_iter=iv_max_iter)
     
     def local_vol(self, s0, t, s, ds=0.01, dt=1/250):
         return np.sqrt(2*derivative(lambda u: self.call_price(s0, u, s), t, dt, n=1) / (s*s*derivative(lambda y: self.call_price(s0, t, y), s, s*ds, n=2)))
     
-    def cdf(self, s0, t, s, epsabs=1.49e-08, epsrel=1.49e-08):
+    def cdf(self, s0, t, s, epsabs=1.49e-08, epsrel=1.49e-08, limit=500):
         return 0.5 - 1/math.pi * intg.quad(
                 LowLevelCallable(_heston_cdf_integrand.ctypes),
                 0, math.inf,
                 args=(t, math.log(s0/s), self.v0, self.kappa, self.theta, self.sigma, self.rho),
                 epsabs=epsabs,
-                epsrel=epsrel)[0]
+                epsrel=epsrel,
+                limit=limit)[0]
     
-    def quantile(self, s0, t, p, price_epsabs=1.49e-08, price_epsrel=1.49e-08, root_eps=1.49e-08):
-        return opt.newton(lambda s: self.cdf(s0, t, s, price_epsabs, price_epsrel) - p, s0, tol=root_eps)
+    def quantile(self, s0, t, p, price_epsabs=1.49e-08, price_epsrel=1.49e-08, price_limit=500, root_eps=1.49e-08):
+        return opt.newton(lambda s: self.cdf(s0, t, s, price_epsabs, price_epsrel, price_limit) - p, s0, tol=root_eps)
     
     
     @classmethod
