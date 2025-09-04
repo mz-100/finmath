@@ -14,7 +14,8 @@ _months = {"January": 1, "February": 2, "March": 3, "April": 4, "May": 5, "June"
           "July": 7, "August": 8, "September": 9, "October": 10, "November": 11, "December": 12}
 
 
-def volatility_surface_from_cboe(cboe_file, feds_file=None, min_maturity=None, max_maturity=None):
+def volatility_surface_from_cboe(cboe_file, feds_file=None, min_maturity=0, max_maturity=math.inf,
+                                 expiration_time="16:00"):
     # Определение даты загрузки опционов из файла с доской опционов CBOE
     # Дата находится в 3й строке в виде "Date: Month Day, Year at HH:MM AM/PM EDT,Bid..."
     with open(cboe_file, 'r') as f:
@@ -52,9 +53,12 @@ def volatility_surface_from_cboe(cboe_file, feds_file=None, min_maturity=None, m
     options['discount_factor'] = math.nan
     options.drop(columns=['bid', 'ask'], inplace=True)
 
+    # Добавка для точного учета времени исполнения внутри дня
+    add_seconds = int(expiration_time.split(':')[0])*3600 + int(expiration_time.split(':')[1])*60
+
     # Для каждый даты исполнения заполняем столбцы time_to_maturity, forward_price, discount_factor
     for m in options.maturity.unique():
-        time_to_maturity = (m - load_date).total_seconds()/365/24/3600
+        time_to_maturity = ((m - load_date).total_seconds() + add_seconds)/365/24/3600
         discount_factor = discount(time_to_maturity)
 
         # Сначала найдем страйк, ближайший к ATMF (у него разность цен колл и пут минимальна)

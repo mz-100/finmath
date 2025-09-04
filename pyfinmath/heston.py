@@ -2,11 +2,6 @@ import cmath
 import math
 from dataclasses import dataclass
 
-try:
-    import cupy as cp
-    import cupyx as cpx
-except ImportError:
-    pass
 import numba
 import numpy as np
 import scipy.integrate as intg
@@ -41,26 +36,32 @@ def _heston_cdf_integrand(n, x):
     return (cmath.exp(1j*omega*u)/(1j*u) * _heston_cf(u, t, v0, kappa, theta, sigma, rho)).real
 
 
-@cpx.jit.rawkernel()
-def _heston_qe_gpu_kernel(S, V, V_tmp, Z, U, mu_dt, theta, K, C, paths, intersteps):
-    thread_id = cpx.jit.blockIdx.x * cpx.jit.blockDim.x + cpx.jit.threadIdx.x  # pylint: disable=no-member
-    total_threads = cpx.jit.gridDim.x * cpx.jit.blockDim.x                     # pylint: disable=no-member
+try:
+    import cupy as cp
+    import cupyx as cpx
 
-    # if the number of paths is greater then the number of threads, we make one thread simulate multiple paths
-    for j in range(thread_id, paths, total_threads):
-        if j < paths:
-            for i in range(intersteps):
-                m = V[j]*C[1] + theta*(1-C[1])
-                s_sq = V[j]*C[2] + C[3]
-                psi = s_sq/m**2
-                b_sq = max(2/psi - 1 + cp.sqrt(max(4/psi**2 - 2/psi, 0)), 0)
-                a = m/(1+b_sq)
-                p = (psi-1)/(psi+1)
-                beta = (1-p)/m
-                V_tmp[j] = V[j]
-                V[j] = a*(cp.sqrt(b_sq)+Z[0,i,j])**2 if psi < 1.5 else (0 if U[i,j] < p else cp.log((1-p)/(1-U[i,j]))/beta)
-                S[j] *= cp.exp(mu_dt[i] + K[0] + K[1]*V_tmp[j] + K[2]*V[j] + cp.sqrt(K[3]*(V_tmp[j] + V[j]))*Z[1,i,j])
+    @cpx.jit.rawkernel()
+    def _heston_qe_gpu_kernel(S, V, V_tmp, Z, U, mu_dt, theta, K, C, paths, intersteps):
+        thread_id = cpx.jit.blockIdx.x * cpx.jit.blockDim.x + cpx.jit.threadIdx.x  # pylint: disable=no-member
+        total_threads = cpx.jit.gridDim.x * cpx.jit.blockDim.x                     # pylint: disable=no-member
 
+        # if the number of paths is greater then the number of threads, we make one thread simulate multiple paths
+        for j in range(thread_id, paths, total_threads):
+            if j < paths:
+                for i in range(intersteps):
+                    m = V[j]*C[1] + theta*(1-C[1])
+                    s_sq = V[j]*C[2] + C[3]
+                    psi = s_sq/m**2
+                    b_sq = max(2/psi - 1 + cp.sqrt(max(4/psi**2 - 2/psi, 0)), 0)
+                    a = m/(1+b_sq)
+                    p = (psi-1)/(psi+1)
+                    beta = (1-p)/m
+                    V_tmp[j] = V[j]
+                    V[j] = a*(cp.sqrt(b_sq)+Z[0,i,j])**2 if psi < 1.5 else (0 if U[i,j] < p else cp.log((1-p)/(1-U[i,j]))/beta)
+                    S[j] *= cp.exp(mu_dt[i] + K[0] + K[1]*V_tmp[j] + K[2]*V[j] + cp.sqrt(K[3]*(V_tmp[j] + V[j]))*Z[1,i,j])
+
+except ImportError:
+    pass
 
 def _heston_qe_cpu_kernel(S, V, V_tmp, Z, U, mu_dt, theta, K, C, paths, intersteps):
     for i in range(intersteps):
