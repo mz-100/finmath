@@ -116,6 +116,7 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{51}
       \field{journaltitle}{Journal of Business}
       \field{langid}{english}
       \field{title}{Prices of state-contingent claims implicit in option prices}
@@ -179,6 +180,7 @@
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{1}
       \field{journaltitle}{Quantitative Finance}
       \field{langid}{english}
       \field{title}{Empirical properties of asset returns: stylized facts and statistical issues}
@@ -224,6 +226,7 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{25}
       \field{journaltitle}{Finance and Stochastics}
       \field{langid}{english}
       \field{title}{Change of drift in one-dimensional diffusions}
@@ -255,6 +258,7 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{7}
       \field{journaltitle}{Risk}
       \field{langid}{english}
       \field{title}{Pricing with a smile}
@@ -323,6 +327,7 @@
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{38}
       \field{journaltitle}{Biometrika}
       \field{langid}{english}
       \field{title}{Note on the inversion theorem}
@@ -359,6 +364,7 @@
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{6}
       \field{journaltitle}{Applied Mathematical Finance}
       \field{langid}{english}
       \field{title}{Equivalent Black volatilities}
@@ -398,6 +404,7 @@
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{internalsortvolume}{150}
       \field{journaltitle}{Stochastic Processes and their Applications}
       \field{langid}{english}
       \field{title}{Expectation of local times and the Dupire formula}
