@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import numpy as np
+import scipy.stats as st
 from scipy import optimize
 from scipy.interpolate import interp1d
 
@@ -17,11 +18,30 @@ class SVI:
         return self.a + self.b*(self.rho*(log_moneyness-self.m) + np.sqrt((log_moneyness-self.m)**2 + self.sigma**2))
     
     def implied_vol(self, forward_price, maturity, strike):
-        log_moneyness = strike/forward_price
+        log_moneyness = np.log(strike/forward_price)
         return np.sqrt(self.total_var(log_moneyness)/maturity)
     
     def __call__(self, log_moneyness):
         return self.total_var(log_moneyness)
+    
+    def cdf(self, s0, s):
+        x = np.log(s/s0)
+        w = self.total_var(x)
+        theta = np.sqrt(w)
+        d1 = -x/theta + theta/2
+        d2 = d1 - theta
+        wp = self.b*(self.rho + (x-self.m) / np.sqrt((x-self.m)**2 + self.sigma**2))
+        return st.norm.pdf(d1)*s0/s * 0.5*wp/theta - st.norm.cdf(d2) + 1
+    
+    def pdf(self, s0, s):
+        x = np.log(s/s0)
+        w = self.total_var(x)
+        theta = np.sqrt(w)
+        d1 = -x/theta + theta/2
+        wp = self.b*(self.rho + (x-self.m) / np.sqrt((x-self.m)**2 + self.sigma**2))
+        wpp = self.b*(1/np.sqrt((x-self.m)**2 + self.sigma**2) -
+                      (x-self.m)**2/((x-self.m)**2 + self.sigma**2)**1.5)
+        return s0*st.norm.pdf(d1)/(theta*s**2)*((1-0.5*x*wp/w)**2 - 0.25*wp**2*(1/w+0.25) + 0.5*wpp)
 
     @staticmethod
     def _calibrate_adc(x, w, m, sigma, no_arbitrage):
