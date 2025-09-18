@@ -304,6 +304,46 @@
       \field{year}{2019}
       \keyw{fm2-main}
     \endentry
+    \entry{FangOosterlee09}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b9d3b9db95f47f8d5bd17131e005c474}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e4d6242da89d793ce43ab3dd4e38a3c8}{%
+           family={Oosterlee},
+           familyi={O\bibinitperiod},
+           given={Cornelis\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{fullhash}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{fullhashraw}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{bibnamehash}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{authorbibnamehash}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{authornamehash}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{authorfullhash}{a04565a853de791bfab7bc0bf3ac612a}
+      \strng{authorfullhashraw}{a04565a853de791bfab7bc0bf3ac612a}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{31}
+      \field{journaltitle}{SIAM Journal on Scientific Computing}
+      \field{langid}{english}
+      \field{title}{A novel pricing method for European options based on Fourier-cosine series expansions}
+      \field{year}{2009}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{826\bibrangedash 848}
+      \range{pages}{23}
+      \field{volume}{31}
+      \range{volume}{1}
+    \endentry
     \entry{GilPelaez51}{article}{}{}
       \name{author}{1}{}{%
         {{hash=cceeb638e697ccdfb7db15ac1e799dcb}{%
