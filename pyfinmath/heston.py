@@ -36,6 +36,32 @@ def _heston_cdf_integrand(n, x):
     return (cmath.exp(1j*omega*u)/(1j*u) * _heston_cf(u, t, v0, kappa, theta, sigma, rho)).real
 
 
+@numba.njit
+def _heston_call_price_cos(s, t, k, v0, kappa, theta, sigma, rho, epsabs, epsrel, limit):
+    c1 = (1-math.exp(-kappa*t))*(theta-v0)/(2*kappa) - 0.5*theta*t
+    c2 = 1/(8*kappa**3) * (
+        sigma*t*kappa*math.exp(-kappa*t)*(v0-theta)*(8*kappa*rho-4*sigma) + kappa*rho*sigma*(1-math.exp(-kappa*t))*(16*theta-8*v0)
+        + 2*theta*kappa*t*(-4*kappa*rho*sigma+sigma**2+4*kappa**2)+sigma**2*((theta-2*v0)*math.exp(-2*kappa*t) + theta*(6*math.exp(-kappa*t)-7)+2*v0)
+        + 8*kappa**2*(v0-theta)*(1-math.exp(-kappa*t)))
+    a = c1 - 12*math.sqrt(math.fabs(c2))
+    b = c1 + 12*math.sqrt(math.fabs(c2))
+    U0 = k*2/(b-a)*(math.exp(b)-1-b)
+    V = 0.5*U0
+    x0 = math.log(s/k)
+    n = 1
+    next_term = 0
+    rel_err = 0
+    while (n < 10) or (n < limit and ((next_term >= epsabs) or (rel_err >= epsrel))):
+        chi = 1/(1+(math.pi*n/(b-a))**2) * ((-1)**n*math.exp(b) - math.cos(-math.pi*n*a/(b-a)) - math.pi*n/(b-a)*math.sin(-math.pi*n*a/(b-a)))
+        psi = math.sin(math.pi*n*a/(b-a))*(b-a)/(n*math.pi)
+        U = k*2/(b-a)*(chi - psi)
+        next_term = (-_heston_cf(math.pi*n/(b-a), t, v0, kappa, theta, sigma, rho)*cmath.exp(1j*math.pi*n*(x0-a)/(b-a))).real * U
+        V += next_term
+        rel_err = math.fabs(next_term/V)
+        n +=1
+    return V
+
+
 try:
     import cupy as cp
     import cupyx as cpx
@@ -88,17 +114,24 @@ class Heston:
     sigma: float
     rho: float
 
-    def call_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08, limit=500):
-        return discount_factor * forward_price * (
-            (1 - strike/forward_price)/2 +
-            1/math.pi * intg.quad(
-                LowLevelCallable(_heston_price_integrand.ctypes),
-                0, math.inf,
-                args=(maturity, math.log(forward_price/strike), self.v0, self.kappa, self.theta, self.sigma, self.rho),
-                epsabs=epsabs, 
-                epsrel=epsrel,
-                limit=limit)[0]
-            )
+    def call_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08, limit=500, method='quad'):
+        if method=='quad':
+            return discount_factor * forward_price * (
+                (1 - strike/forward_price)/2 +
+                1/math.pi * intg.quad(
+                    LowLevelCallable(_heston_price_integrand.ctypes),
+                    0, math.inf,
+                    args=(maturity, math.log(forward_price/strike), self.v0, self.kappa, self.theta, self.sigma, self.rho),
+                    epsabs=epsabs, 
+                    epsrel=epsrel,
+                    limit=limit)[0]
+                )
+        elif method=='cos':
+            return discount_factor * _heston_call_price_cos(
+                forward_price, maturity, strike, self.v0, self.kappa, self.theta, self.sigma, self.rho, epsabs, epsrel, limit)
+        else:
+            raise ValueError(f'Unknown method: {method}')
+
 
     def put_price(self, forward_price, maturity, strike, discount_factor=1.0, epsabs=1.49e-08, epsrel=1.49e-08, limit=500):
         # Используется паритет колл-пут
