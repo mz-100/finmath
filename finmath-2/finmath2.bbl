@@ -58,6 +58,40 @@
       \field{title}{The little {H}eston trap}
       \field{year}{2007}
     \endentry
+    \entry{Andersen08}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e354a0dca6b00c01f599ada0f01700be}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Leif},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Risk Waters Group}%
+      }
+      \strng{namehash}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{fullhash}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{fullhashraw}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{bibnamehash}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{authorbibnamehash}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{authornamehash}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{authorfullhash}{e354a0dca6b00c01f599ada0f01700be}
+      \strng{authorfullhashraw}{e354a0dca6b00c01f599ada0f01700be}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Finance}
+      \field{langid}{english}
+      \field{title}{Simple and efficient simulation of the Heston stochastic volatility model}
+      \field{year}{2008}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{1\bibrangedash 43}
+      \range{pages}{43}
+      \field{volume}{11}
+      \range{volume}{1}
+    \endentry
     \entry{AndreasenHuge10}{misc}{}{}
       \name{author}{2}{}{%
         {{hash=34add06aee9485dab7923237536d9398}{%
@@ -83,6 +117,7 @@
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{langid}{english}
       \field{note}{\url{https://ssrn.com/abstract=1694972}}
       \field{title}{Volatility interpolation}
       \field{year}{2010}
@@ -116,7 +151,6 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{51}
       \field{journaltitle}{Journal of Business}
       \field{langid}{english}
       \field{title}{Prices of state-contingent claims implicit in option prices}
@@ -180,7 +214,6 @@
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{1}
       \field{journaltitle}{Quantitative Finance}
       \field{langid}{english}
       \field{title}{Empirical properties of asset returns: stylized facts and statistical issues}
@@ -226,7 +259,6 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{25}
       \field{journaltitle}{Finance and Stochastics}
       \field{langid}{english}
       \field{title}{Change of drift in one-dimensional diffusions}
@@ -258,7 +290,6 @@
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{7}
       \field{journaltitle}{Risk}
       \field{langid}{english}
       \field{title}{Pricing with a smile}
@@ -332,7 +363,6 @@
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{31}
       \field{journaltitle}{SIAM Journal on Scientific Computing}
       \field{langid}{english}
       \field{title}{A novel pricing method for European options based on Fourier-cosine series expansions}
@@ -367,7 +397,6 @@
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{38}
       \field{journaltitle}{Biometrika}
       \field{langid}{english}
       \field{title}{Note on the inversion theorem}
@@ -404,7 +433,6 @@
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{6}
       \field{journaltitle}{Applied Mathematical Finance}
       \field{langid}{english}
       \field{title}{Equivalent Black volatilities}
@@ -444,7 +472,6 @@
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{internalsortvolume}{150}
       \field{journaltitle}{Stochastic Processes and their Applications}
       \field{langid}{english}
       \field{title}{Expectation of local times and the Dupire formula}
@@ -453,6 +480,68 @@
       \range{pages}{6}
       \field{volume}{150}
       \range{volume}{1}
+    \endentry
+    \entry{Heston93}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=da886e16f39671df2e1cc9208589b67d}{%
+           family={Heston},
+           familyi={H\bibinitperiod},
+           given={Steven\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{da886e16f39671df2e1cc9208589b67d}
+      \strng{fullhash}{da886e16f39671df2e1cc9208589b67d}
+      \strng{fullhashraw}{da886e16f39671df2e1cc9208589b67d}
+      \strng{bibnamehash}{da886e16f39671df2e1cc9208589b67d}
+      \strng{authorbibnamehash}{da886e16f39671df2e1cc9208589b67d}
+      \strng{authornamehash}{da886e16f39671df2e1cc9208589b67d}
+      \strng{authorfullhash}{da886e16f39671df2e1cc9208589b67d}
+      \strng{authorfullhashraw}{da886e16f39671df2e1cc9208589b67d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Review of Financial Studies}
+      \field{langid}{english}
+      \field{title}{A closed-form solution for options with stochastic volatility with applications to bond and currency options}
+      \field{year}{1993}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{327\bibrangedash 343}
+      \range{pages}{17}
+      \field{volume}{6}
+      \range{volume}{1}
+      \keyw{fm2-main}
+    \endentry
+    \entry{Kallenberg97}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f6bb1091b9da51c1ac66f8a4a75fcba9}{%
+           family={Kallenberg},
+           familyi={K\bibinitperiod},
+           given={Olav},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{fullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{fullhashraw}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{bibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorbibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authornamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorfullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorfullhashraw}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Foundations of Modern Probability}
+      \field{year}{1997}
     \endentry
     \entry{KaratzasShreve91}{book}{}{}
       \name{author}{2}{}{%
@@ -487,6 +576,38 @@
       \field{title}{Brownian Motion and Stochastic Calculus}
       \field{year}{1991}
       \keyw{fm2-main}
+    \endentry
+    \entry{KloedenPlaten95}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=7b32249850edcace60b1c231a0f5fb51}{%
+           family={Kloeden},
+           familyi={K\bibinitperiod},
+           given={Peter\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a4fb5859192206ba44cf72178b85abb6}{%
+           family={Platen},
+           familyi={P\bibinitperiod},
+           given={Eckhard},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sptinger}%
+      }
+      \strng{namehash}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{fullhash}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{fullhashraw}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{bibnamehash}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{authorbibnamehash}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{authornamehash}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{authorfullhash}{0183f9b6362d5aa8d2faeea78d274490}
+      \strng{authorfullhashraw}{0183f9b6362d5aa8d2faeea78d274490}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Numerical Solution of Stochastic Differential Equations}
+      \field{year}{1995}
     \endentry
     \entry{MusielaRutkowski09}{book}{}{}
       \name{author}{2}{}{%
