@@ -355,10 +355,10 @@ V(t,x) = \E\left(e^{-\int_t^T c(s,X_s)ds} f(X_T) \;\bigg|\; X_t = x\right),
 \end{remark}
 
 \begin{remark}
-Если броуновское движение $W_t$ имеет коррелированные компоненты с матрицей корреляций $\Sigma$ (\te\ $\E(W_t^iW_t^j = \sigma_{ij}t$)), то формула \fc\ дает представление в виде \eqref{sde:fc-v} для решения уравнения 
+Если броуновское движение $W_t$ имеет коррелированные компоненты с $\E(W_t^iW_t^j) = \rho_{ij}t$, то формула \fc\ дает представление в виде \eqref{sde:fc-v} для решения уравнения 
 \[
 \frac{\partial V}{\partial t} + \sum_{i=1}^n a^i\frac{\partial V}{\partial x^i} + 
-\sum_{i,j=1}^n \sum_{k,l=1}^d b^{ik}\sigma_{kl}b^{jl}\frac{\partial^2 V}{\partial x^i \partial x^j} = cV.
+\sum_{i,j=1}^n \sum_{k,l=1}^d b^{ik}\rho_{kl}b^{jl}\frac{\partial^2 V}{\partial x^i \partial x^j} = cV.
 \]
 Это уравнение получается сведением к случаю броуновского движения с независимыми компонентами, как описано в замечании \ref{sde:r:decorrelate}.
 

@@ -516,6 +516,42 @@
       \range{volume}{1}
       \keyw{fm2-main}
     \endentry
+    \entry{InTHoutFoulon10}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ce3802ced3d07d5056dd200c0e9d3492}{%
+           family={In\bibnamedelima 'T\bibnamedelima Hout},
+           familyi={I\bibinitperiod\bibinitdelim '\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={K\bibnamedelima J},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f54968685eedca1020e4bfbba2005451}{%
+           family={Foulon},
+           familyi={F\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{fullhash}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{fullhashraw}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{bibnamehash}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{authorbibnamehash}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{authornamehash}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{authorfullhash}{e0d3eb2122da5c8a166567628b920d4a}
+      \strng{authorfullhashraw}{e0d3eb2122da5c8a166567628b920d4a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Numerical Analysis \& Modeling}
+      \field{langid}{english}
+      \field{title}{{ADI} finite difference schemes for option pricing in the {H}eston model with correlation}
+      \field{year}{2010}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{303\bibrangedash 320}
+      \range{pages}{18}
+      \field{volume}{7}
+      \range{volume}{1}
+    \endentry
     \entry{Kallenberg97}{book}{}{}
       \name{author}{1}{}{%
         {{hash=f6bb1091b9da51c1ac66f8a4a75fcba9}{%
@@ -591,7 +627,7 @@
            giveni={E\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Sptinger}%
+        {Springer}%
       }
       \strng{namehash}{0183f9b6362d5aa8d2faeea78d274490}
       \strng{fullhash}{0183f9b6362d5aa8d2faeea78d274490}
@@ -673,6 +709,38 @@
       \field{langid}{english}
       \field{title}{Continuous Martingales and Brownian Motion}
       \field{year}{1991}
+    \endentry
+    \entry{GulinSamarski89}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=3f8026e15a3dd16bcb71185c902952da}{%
+           family={Гулин},
+           familyi={Г\bibinitperiod},
+           given={А.\bibnamedelimi В.},
+           giveni={А\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=b422edd393c3701b216ba09bfd70131e}{%
+           family={Самарский},
+           familyi={С\bibinitperiod},
+           given={А.\bibnamedelimi А.},
+           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{fullhash}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{fullhashraw}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{bibnamehash}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{authorbibnamehash}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{authornamehash}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{authorfullhash}{77c48037cc34647cff4c6d7d7684ab41}
+      \strng{authorfullhashraw}{77c48037cc34647cff4c6d7d7684ab41}
+      \field{sortinit}{Г}
+      \field{sortinithash}{c5a772f362f759c048c1f27b275f0dbf}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{title}{Численные методы}
+      \field{year}{1989}
     \endentry
     \entry{JacodShiryaev94}{book}{}{}
       \name{author}{2}{}{%
