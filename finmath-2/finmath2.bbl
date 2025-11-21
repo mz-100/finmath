@@ -123,6 +123,79 @@
       \field{year}{2010}
       \keyw{fm2-main}
     \endentry
+    \entry{BarndorffNielsenShiryaev15}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=1673a6a52bfddf8207b1d59916d02229}{%
+           family={Barndorff-Nielsen},
+           familyi={B\bibinithyphendelim N\bibinitperiod},
+           given={Ole\bibnamedelima E},
+           giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=74d03c8de604cb66d4ce61ebe5014d78}{%
+           family={Shiryaev},
+           familyi={S\bibinitperiod},
+           given={Albert\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{fullhash}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{fullhashraw}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{bibnamehash}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{authorbibnamehash}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{authornamehash}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{authorfullhash}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \strng{authorfullhashraw}{40ca69460c5cb81e2c7757ef7225dc4c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Change of Time and Change of Measure}
+      \field{year}{2015}
+    \endentry
+    \entry{Berestycki+04}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=da7542f3b4c8ed8ef1ca0a45ec84fb87}{%
+           family={Berestycki},
+           familyi={B\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ccee204e9fcddeb2dceb0344b2db1bb0}{%
+           family={Busca},
+           familyi={B\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3da13a58ec9a42e36cbac05c28b693c8}{%
+           family={Florent},
+           familyi={F\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{fullhash}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{fullhashraw}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{bibnamehash}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{authorbibnamehash}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{authornamehash}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{authorfullhash}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \strng{authorfullhashraw}{8b706caa463e52f3dd72befeb4d4c3f4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications on Pure and Applied Mathematics}
+      \field{langid}{english}
+      \field{title}{Computing the implied volatility in stochastic volatility models}
+      \field{year}{2004}
+      \field{number}{10}
+      \range{number}{1}
+      \field{pages}{1352\bibrangedash 1373}
+      \range{pages}{22}
+      \field{volume}{57}
+      \range{volume}{1}
+    \endentry
     \entry{BreedenLitzenberger78}{article}{}{}
       \name{author}{2}{}{%
         {{hash=4f844f5106b47947356f4b20ad0470e4}{%
@@ -160,6 +233,47 @@
       \field{pages}{621\bibrangedash 651}
       \range{pages}{31}
       \field{volume}{51}
+      \range{volume}{1}
+    \endentry
+    \entry{ChenOsterlee12}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e68812ef39031c269522ef59a77d9a06}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e4d6242da89d793ce43ab3dd4e38a3c8}{%
+           family={Oosterlee},
+           familyi={O\bibinitperiod},
+           given={Cornelis\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=e2db9d92dd776f23299628c70c220c39}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Weide},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{fullhash}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{fullhashraw}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{bibnamehash}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{authorbibnamehash}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{authornamehash}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{authorfullhash}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \strng{authorfullhashraw}{d5bd51d4f14a19ff7ce2ba264dcfe9b6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Theoretical and Applied Finance}
+      \field{langid}{english}
+      \field{title}{A low-bias simulation scheme for the SABR stochastic volatility model}
+      \field{year}{2012}
+      \field{number}{02}
+      \range{number}{1}
+      \field{pages}{1250016}
+      \range{pages}{1}
+      \field{volume}{15}
       \range{volume}{1}
     \endentry
     \entry{ChernyEngelbert}{book}{}{}
@@ -408,6 +522,85 @@
       \field{volume}{38}
       \range{volume}{1}
     \endentry
+    \entry{GoingYor03}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c0219b54c3a38b52f6670b5736c24018}{%
+           family={Göing-Jaeschke},
+           familyi={G\bibinithyphendelim J\bibinitperiod},
+           given={Anja},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1e58f52d7501e0df28f20cd5871cbc80}{%
+           family={Yor},
+           familyi={Y\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{fullhash}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{fullhashraw}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{bibnamehash}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{authorbibnamehash}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{authornamehash}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{authorfullhash}{f61b7b5d9f434b8feddceff217603c27}
+      \strng{authorfullhashraw}{f61b7b5d9f434b8feddceff217603c27}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bernoulli}
+      \field{langid}{english}
+      \field{title}{A survey and some generalizations of {B}essel processes}
+      \field{year}{2003}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{313\bibrangedash 349}
+      \range{pages}{37}
+      \field{volume}{9}
+      \range{volume}{1}
+    \endentry
+    \entry{Hagan+02}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9928c367706ef06b6b22b436c6ca559d}{%
+           family={Hagan},
+           familyi={H\bibinitperiod},
+           given={P.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b2c259f2d8e3817536614be6367f6c64}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=edec86f8c9667472f58f5524869fd053}{%
+           family={Lesniewski},
+           familyi={L\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=bced3069dfde0010de6c59ff18a47306}{%
+           family={Woodward},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{34c285d2b7c3a96654b86d3dbfbe800a}
+      \strng{fullhash}{d15a515706afe4278ea78f445def7cc4}
+      \strng{fullhashraw}{d15a515706afe4278ea78f445def7cc4}
+      \strng{bibnamehash}{d15a515706afe4278ea78f445def7cc4}
+      \strng{authorbibnamehash}{d15a515706afe4278ea78f445def7cc4}
+      \strng{authornamehash}{34c285d2b7c3a96654b86d3dbfbe800a}
+      \strng{authorfullhash}{d15a515706afe4278ea78f445def7cc4}
+      \strng{authorfullhashraw}{d15a515706afe4278ea78f445def7cc4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wilmott Magazine}
+      \field{langid}{english}
+      \field{title}{Managing smile risk}
+      \field{year}{July 2002}
+      \field{pages}{84\bibrangedash 108}
+      \range{pages}{25}
+      \keyw{fm2-main}
+    \endentry
     \entry{HaganWoodward99}{article}{}{}
       \name{author}{2}{}{%
         {{hash=067f5fcee09845c4df74dde207a89c67}{%
@@ -480,6 +673,30 @@
       \range{pages}{6}
       \field{volume}{150}
       \range{volume}{1}
+    \endentry
+    \entry{Labordere05}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=be2ac5fa64c1a20f356754af8e6a66cd}{%
+           family={Henry-Labordere},
+           familyi={H\bibinithyphendelim L\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{fullhash}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{fullhashraw}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{bibnamehash}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{authorbibnamehash}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{authornamehash}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{authorfullhash}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \strng{authorfullhashraw}{be2ac5fa64c1a20f356754af8e6a66cd}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv:cond-mat/0504317}
+      \field{title}{A general asymptotic implied volatility for stochastic volatility models}
+      \field{year}{2005}
     \endentry
     \entry{Heston93}{article}{}{}
       \name{author}{1}{}{%
@@ -678,6 +895,30 @@
       \field{year}{2009}
       \keyw{fm2-main}
     \endentry
+    \entry{Obloj07}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0f519ba79c225e771fe871df05530f81}{%
+           family={Oblój},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f519ba79c225e771fe871df05530f81}
+      \strng{fullhash}{0f519ba79c225e771fe871df05530f81}
+      \strng{fullhashraw}{0f519ba79c225e771fe871df05530f81}
+      \strng{bibnamehash}{0f519ba79c225e771fe871df05530f81}
+      \strng{authorbibnamehash}{0f519ba79c225e771fe871df05530f81}
+      \strng{authornamehash}{0f519ba79c225e771fe871df05530f81}
+      \strng{authorfullhash}{0f519ba79c225e771fe871df05530f81}
+      \strng{authorfullhashraw}{0f519ba79c225e771fe871df05530f81}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv:0708.0998}
+      \field{title}{Fine-tune your smile: Correction to Hagan et al}
+      \field{year}{2007}
+    \endentry
     \entry{RevuzYor}{book}{}{}
       \name{author}{2}{}{%
         {{hash=d22ba828552db2e93a2f5a9c4a3b82ab}{%
@@ -709,6 +950,37 @@
       \field{langid}{english}
       \field{title}{Continuous Martingales and Brownian Motion}
       \field{year}{1991}
+    \endentry
+    \entry{Schroder89}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2f6aab7d4929d2487b7ae5bc928b6880}{%
+           family={Schroder},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{fullhash}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{fullhashraw}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{bibnamehash}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{authorbibnamehash}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{authornamehash}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{authorfullhash}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \strng{authorfullhashraw}{2f6aab7d4929d2487b7ae5bc928b6880}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{langid}{english}
+      \field{title}{Computing the constant elasticity of variance option pricing formula}
+      \field{year}{1989}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{211\bibrangedash 219}
+      \range{pages}{9}
+      \field{volume}{44}
+      \range{volume}{1}
     \endentry
     \entry{GulinSamarski89}{book}{}{}
       \name{author}{2}{}{%

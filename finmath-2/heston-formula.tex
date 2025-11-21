@@ -81,9 +81,9 @@ d X_t^{(i)} = a^{(i)}(t, X_t^{(i)}) dt + b(t,X_t^{(i)}) d W_t, \qquad X_0^{(i)} 
 \begin{enumerate}
 \item функции $a^{(i)}(t,x)$, $b(t,x)$ непрерывны;
 \item $|a^{(i)}(t,x) - a^{(i)}(t,y)| \le K|x-y|$ с некоторой константой $K>0$ для всех $t,x$ и хотя бы одного $i=1,2$;
-\item найдется возрастающая функция $h(x)$ такая, что $h(0) = 0$, $\int_0^\epsilon h(x) dx = \infty$ для любого $\epsilon>0$, а также $|b(t,x) - b(t,y)| \le h(|x-y|)$ для всех $x,y$;
+\item найдется возрастающая функция $h(x)$ такая, что $h(0) = 0$, $\int_0^\epsilon h^{-2}(x) dx = \infty$ для любого $\epsilon>0$, а также $|b(t,x) - b(t,y)| \le h(|x-y|)$ для всех $x,y$;
 \item $x_0^{(1)} \le x_0^{(2)}$;
-\item $b^{(1)}(t,x) \le b^{(2)}(t,x)$ для всех $t,x$;
+\item $a^{(1)}(t,x) \le a^{(2)}(t,x)$ для всех $t,x$;
 \end{enumerate}
 Тогда $X_t^{(1)} \le X_t^{(2)}$ \as\ для всех $t\ge 0$.
 \end{lemma}

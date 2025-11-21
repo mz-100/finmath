@@ -7,6 +7,7 @@ from .volatility_surface import volatility_surface_from_cboe, choose_from_iv_sur
 from .monte_carlo import MCResult, monte_carlo, monte_carlo_cv
 from .svi import SVI
 from .sabr import SABR
+from .cev import CEV
 
 __all__ = [
     "CoxRossRubinstein",
@@ -15,6 +16,7 @@ __all__ = [
     "NelsonSiegelSvensson",
     "SVI",
     "SABR",
+    "CEV",
     "implied_vol",
     "MCResult",
     "volatility_surface_from_cboe",

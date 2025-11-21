@@ -28,7 +28,7 @@ U_t^X = \E(X \mid \F_t).
 \end{align}
 с дифференциальным оператором
 \[
-\mathcal{L} = \kappa(\theta-v)\prt{}v + \frac 12 s^2v \prtt {}s + \frac12 \sigma^2v \prtt {}v + \sigma sv \Prtt{}sv.
+\mathcal{L} = \kappa(\theta-v)\prt{}v + \frac 12 s^2v \prtt {}s + \frac12 \sigma^2v \prtt {}v + \sigma\rho sv \Prtt{}sv.
 \]
 
 Будем искать функцию $U$ численно на множестве $[0,T]\times[0,s_{\max}]\times[0,v_{\max}]$, где значения $s_{\max}$ и $v_{\max}$ выбираются достаточно большими, так что процесс $(S_t,V_t)$ достигает соответствующих границ  с малой вероятностью. 
@@ -106,7 +106,7 @@ u_{m,n}(T) = (s_m-K)^+,
   L_{m,n}^{m+1,n} = \frac{s_m^2v_n}{2(\Delta s)^2}, \qquad
   L_{m,n}^{m+1,n+1} = \frac{\sigma\rho s_mv_n}{4\Delta s\Delta v};
 \end{align*}
-для $m=0$ имеем
+для $n=0$ и $1\le m \le M-1$ имеем
 \[
 L_{m,0}^{m,1} = \frac{\kappa\theta}{\Delta v}, \qquad L_{m,0}^{m,0} = -\frac{\kappa\theta}{\Delta v};
 \]
@@ -159,7 +159,7 @@ L =  A + B,
 \end{align}
 Обе этих системы эффективно решаются методом прогонки. Действительно, чтобы решить систему \eqref{adi:pr-1} нужно для каждого фиксированного $n=0,\dots,N$ рассмотреть ее как систему уравнений на переменные $u^{i-\frac12}_{m,n}$, где $m=0,\dots,M$: 
 \begin{multline*}
-\frac{u^{i-\frac12}_{m,n} - u^i_{m,n}}{\Delta t/2} 
+\frac{u^{i-\frac12}_{m,n} - u^i_{m,n}}{\Delta t} 
   = A_{m,n}^{m-1,n}u^{i-\frac12}_{m-1,n} + A_{m,n}^{m,n}u^{i-\frac12}_{m,n} +  A_{m,n}^{m+1,n}u^{i-\frac12}_{m+1,n} \\
   + B_{m,n-1}^{m,n-1}u^i_{m,n-1} + B_{m,n}^{m,n}u^i_{m,n} + B_{m,n}^{m,n+1}u^i_{m,n+1}
 \end{multline*}
@@ -222,7 +222,7 @@ L =  A + B + C,
 где $A,B$ такие же, как и в предыдущем разделе, а тензор $C$ содержит компоненты $L$, возникающие из аппроксимации смешанной производной:
 \[
 C_{m,n}^{m-1,n-1} = C_{m,n}^{m+1,n-1} = \frac{\sigma\rho s_mv_n}{4\Delta s \Delta v},\qquad
-C_{m,n}^{m-1,n+1} = C_{m,n}^{m+1,n+1} = \frac{\sigma\rho s_mv_n}{4\Delta s \Delta v}.
+C_{m,n}^{m-1,n+1} = C_{m,n}^{m+1,n+1} = -\frac{\sigma\rho s_mv_n}{4\Delta s \Delta v}.
 \]
 Тогда схему Дугласа"--~Рэчфорда можно обобщить следующим образом:
 \begin{align}
